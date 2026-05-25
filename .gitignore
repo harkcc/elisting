@@ -1,0 +1,17 @@
+# local/generated artifacts
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+
+# large generated outputs should be promoted selectively
+output/
+dist/
+build/
+.tmp/
+.cache/
+
+# image/video assets are allowed when intentionally approved, but raw dumps should stay out
+raw_captures/
