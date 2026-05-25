@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EXCITAT GIF Motion Component Candidates</title>
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #667085;
+      --paper: #fff;
+      --line: #d9dee8;
+      --gold: #f4c95d;
+      --blue: #48c7ff;
+      --green: #4bc181;
+      --dark: #111827;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    body {
+      margin: 0;
+      background: #f4f6f8;
+      color: var(--ink);
+    }
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      letter-spacing: 0;
+    }
+    .note {
+      margin: 0 0 24px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+    }
+    .component {
+      position: relative;
+      min-height: 156px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      padding: 18px;
+      box-sizing: border-box;
+    }
+    .component.dark {
+      background: linear-gradient(135deg, #101826, #1c2432);
+      color: #fff;
+    }
+    .component-title {
+      position: relative;
+      z-index: 2;
+      margin: 0 0 8px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+    .component-copy {
+      position: relative;
+      z-index: 2;
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.42;
+    }
+    .dark .component-copy {
+      color: #c9d4e5;
+    }
+    .shine::after {
+      content: "";
+      position: absolute;
+      inset: -30%;
+      width: 38%;
+      transform: translateX(-160%) rotate(22deg);
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.62), transparent);
+      animation: shine 2.4s ease-in-out infinite;
+    }
+    .shine.gold::after { background: linear-gradient(90deg, transparent, rgba(244,201,93,.72), transparent); }
+    .shine.blue::after { background: linear-gradient(90deg, transparent, rgba(72,199,255,.70), transparent); }
+    @keyframes shine {
+      0%, 22% { transform: translateX(-170%) rotate(22deg); }
+      58%, 100% { transform: translateX(360%) rotate(22deg); }
+    }
+    .steps {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      gap: 8px;
+      margin-top: 18px;
+    }
+    .step {
+      flex: 1;
+      padding: 12px 8px;
+      border-radius: 6px;
+      border: 1px solid #cfd8e3;
+      text-align: center;
+      font-weight: 800;
+      color: #344054;
+      background: #fff;
+      animation: stepPulse 3.2s infinite;
+    }
+    .step:nth-child(2) { animation-delay: .55s; }
+    .step:nth-child(3) { animation-delay: 1.1s; }
+    .step:nth-child(4) { animation-delay: 1.65s; }
+    @keyframes stepPulse {
+      0%, 72%, 100% { border-color: #cfd8e3; box-shadow: none; transform: translateY(0); }
+      18% { border-color: var(--green); box-shadow: 0 0 0 4px rgba(75,193,129,.18); transform: translateY(-2px); }
+    }
+    .pulse-dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--green);
+      margin-top: 22px;
+      box-shadow: 0 0 0 0 rgba(75,193,129,.45);
+      animation: pulseDot 1.6s infinite;
+    }
+    @keyframes pulseDot {
+      0% { box-shadow: 0 0 0 0 rgba(75,193,129,.45); }
+      70% { box-shadow: 0 0 0 18px rgba(75,193,129,0); }
+      100% { box-shadow: 0 0 0 0 rgba(75,193,129,0); }
+    }
+    .scan-box {
+      position: relative;
+      z-index: 2;
+      height: 54px;
+      margin-top: 18px;
+      border-radius: 6px;
+      border: 1px solid rgba(72,199,255,.42);
+      background: repeating-linear-gradient(90deg, rgba(72,199,255,.08), rgba(72,199,255,.08) 1px, transparent 1px, transparent 14px);
+      overflow: hidden;
+    }
+    .scan-box::after {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 28%;
+      background: linear-gradient(90deg, transparent, rgba(72,199,255,.6), transparent);
+      animation: scan 2s linear infinite;
+    }
+    @keyframes scan {
+      from { transform: translateX(-100%); }
+      to { transform: translateX(420%); }
+    }
+    .glow {
+      animation: glowBorder 2.4s ease-in-out infinite;
+    }
+    @keyframes glowBorder {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(244,201,93,0); border-color: var(--line); }
+      50% { box-shadow: 0 0 0 4px rgba(244,201,93,.18); border-color: rgba(244,201,93,.7); }
+    }
+    .progress {
+      position: relative;
+      z-index: 2;
+      height: 12px;
+      margin-top: 24px;
+      border-radius: 999px;
+      background: #e7edf4;
+      overflow: hidden;
+    }
+    .progress::before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 42%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--green), var(--blue));
+      animation: progressFill 2.8s ease-in-out infinite;
+    }
+    @keyframes progressFill {
+      0%, 100% { width: 22%; }
+      50% { width: 86%; }
+    }
+    .wipe {
+      position: relative;
+      z-index: 2;
+      margin-top: 16px;
+      height: 56px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: linear-gradient(90deg, #dfe5ec 50%, #bce8ce 50%);
+    }
+    .wipe::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      background: #fff;
+      box-shadow: 0 0 0 1px rgba(0,0,0,.08);
+      animation: wipeLine 2.8s ease-in-out infinite;
+    }
+    @keyframes wipeLine {
+      0%, 100% { left: 28%; }
+      50% { left: 72%; }
+    }
+    .radar {
+      position: relative;
+      z-index: 2;
+      width: 64px;
+      height: 64px;
+      margin-top: 14px;
+      border-radius: 50%;
+      background: rgba(72,199,255,.14);
+    }
+    .radar::before,
+    .radar::after {
+      content: "";
+      position: absolute;
+      inset: 16px;
+      border: 2px solid rgba(72,199,255,.7);
+      border-radius: 50%;
+      animation: radar 2s ease-out infinite;
+    }
+    .radar::after { animation-delay: .7s; }
+    @keyframes radar {
+      from { transform: scale(.45); opacity: .9; }
+      to { transform: scale(2.1); opacity: 0; }
+    }
+    .wordmark {
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 14px;
+      border-radius: 6px;
+      background: #101826;
+      color: #fff;
+      font-weight: 900;
+      letter-spacing: .08em;
+      overflow: hidden;
+    }
+    .wordmark::after {
+      content: "";
+      position: absolute;
+      inset: -20%;
+      transform: translateX(-130%) rotate(18deg);
+      width: 28%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.78), transparent);
+      animation: shine 2.8s infinite;
+    }
+    .badge {
+      position: relative;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 18px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid #d7dee8;
+      background: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      overflow: hidden;
+    }
+    .badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+    .rank {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      gap: 6px;
+      margin-top: 18px;
+    }
+    .rank span {
+      min-width: 34px;
+      padding: 8px 9px;
+      border-radius: 6px;
+      background: #eef8f0;
+      color: #167349;
+      text-align: center;
+      font-weight: 900;
+      animation: stepPulse 3.4s infinite;
+    }
+    .rank span:nth-child(2) { animation-delay: .55s; }
+    .rank span:nth-child(3) { animation-delay: 1.1s; }
+    @media (max-width: 520px) {
+      .wrap { padding: 22px 12px 36px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>EXCITAT GIF / HTML Motion Component Candidates</h1>
+    <p class="note">These are small HTML/CSS motion previews. Approved effects can later be exported to GIF/WebP and embedded into detail-page images or HTML.</p>
+
+    <section class="grid">
+      <article class="component dark shine gold" data-component-id="motion_shine_sweep_gold" data-edit-id="candidate-motion-01">
+        <h2 class="component-title">motion_shine_sweep_gold</h2>
+        <p class="component-copy">Brand or trust highlight without product deformation.</p>
+      </article>
+      <article class="component dark shine blue" data-component-id="motion_shine_sweep_blue" data-edit-id="candidate-motion-02">
+        <h2 class="component-title">motion_shine_sweep_blue</h2>
+        <p class="component-copy">Tech/electronics highlight for proof or spec modules.</p>
+      </article>
+      <article class="component" data-component-id="motion_step_highlight_3" data-edit-id="candidate-motion-03">
+        <h2 class="component-title">motion_step_highlight_3</h2>
+        <p class="component-copy">Three-step use or setup proof.</p>
+        <div class="steps"><span class="step">01</span><span class="step">02</span><span class="step">03</span></div>
+      </article>
+      <article class="component" data-component-id="motion_step_highlight_4" data-edit-id="candidate-motion-04">
+        <h2 class="component-title">motion_step_highlight_4</h2>
+        <p class="component-copy">Four-step installation or routine proof.</p>
+        <div class="steps"><span class="step">01</span><span class="step">02</span><span class="step">03</span><span class="step">04</span></div>
+      </article>
+      <article class="component" data-component-id="motion_pulse_dot" data-edit-id="candidate-motion-05">
+        <h2 class="component-title">motion_pulse_dot</h2>
+        <p class="component-copy">Small attention marker for a verified proof point.</p>
+        <div class="pulse-dot"></div>
+      </article>
+      <article class="component dark" data-component-id="motion_scan_line" data-edit-id="candidate-motion-06">
+        <h2 class="component-title">motion_scan_line</h2>
+        <p class="component-copy">Technical scan line for spec or compatibility context.</p>
+        <div class="scan-box"></div>
+      </article>
+      <article class="component glow" data-component-id="motion_soft_glow_border" data-edit-id="candidate-motion-07">
+        <h2 class="component-title">motion_soft_glow_border</h2>
+        <p class="component-copy">Subtle border glow for a focused card.</p>
+      </article>
+      <article class="component" data-component-id="motion_progress_fill" data-edit-id="candidate-motion-08">
+        <h2 class="component-title">motion_progress_fill</h2>
+        <p class="component-copy">Process/progress proof for charging, setup, or cleaning.</p>
+        <div class="progress"></div>
+      </article>
+      <article class="component" data-component-id="motion_before_after_wipe" data-edit-id="candidate-motion-09">
+        <h2 class="component-title">motion_before_after_wipe</h2>
+        <p class="component-copy">Before/after reveal. Requires real before/after evidence.</p>
+        <div class="wipe"></div>
+      </article>
+      <article class="component dark" data-component-id="motion_radar_ping" data-edit-id="candidate-motion-10">
+        <h2 class="component-title">motion_radar_ping</h2>
+        <p class="component-copy">Coverage, detection, or signal proof marker.</p>
+        <div class="radar"></div>
+      </article>
+      <article class="component" data-component-id="brand_wordmark_shine" data-edit-id="candidate-motion-11">
+        <h2 class="component-title">brand_wordmark_shine</h2>
+        <p class="component-copy">Deterministic wordmark with controlled shine.</p>
+        <div class="wordmark">X-CITY</div>
+      </article>
+      <article class="component" data-component-id="corner_badge_shine" data-edit-id="candidate-motion-12">
+        <h2 class="component-title">corner_badge_shine</h2>
+        <p class="component-copy">Corner status/brand badge. No fake awards or guarantees.</p>
+        <div class="badge shine">EXCITAT</div>
+      </article>
+      <article class="component" data-component-id="e2_marker_chip" data-edit-id="candidate-motion-13">
+        <h2 class="component-title">e2_marker_chip</h2>
+        <p class="component-copy">E2-style marker chip for product family or module state.</p>
+        <div class="badge">E2</div>
+      </article>
+      <article class="component" data-component-id="rank_number_strip" data-edit-id="candidate-motion-14">
+        <h2 class="component-title">rank_number_strip</h2>
+        <p class="component-copy">Reading-order strip for proof points.</p>
+        <div class="rank"><span>01</span><span>02</span><span>03</span></div>
+      </article>
+      <article class="component" data-component-id="proof_check_chip" data-edit-id="candidate-motion-15">
+        <h2 class="component-title">proof_check_chip</h2>
+        <p class="component-copy">Feature chip tied to ProductTruthPack evidence.</p>
+        <div class="badge">Proof point</div>
+      </article>
+      <article class="component" data-component-id="package_count_pulse" data-edit-id="candidate-motion-16">
+        <h2 class="component-title">package_count_pulse</h2>
+        <p class="component-copy">Package count emphasis. Must map to real package contents.</p>
+        <div class="badge">15 pcs</div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

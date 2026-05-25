@@ -27,10 +27,12 @@ The system is split into three tracks:
 
 - [Current Retention Map](docs/2026-05-25-current-retention-map.md)
 - [Repo Collaboration Plan](docs/repo-collaboration-plan.md)
+- [Open Source Component Reference Scan](docs/open-source-component-reference-scan.md)
 
 ## First Agent Package
 
 - [EXCITAT eMAG Detail Agent](packages/excitat-emag-detail-agent/README.md)
+- [GIF / HTML Motion Candidate Gallery](packages/excitat-emag-detail-agent/examples/component-gallery/gif-motion-html-preview.html)
 
 Validate the package structure:
 

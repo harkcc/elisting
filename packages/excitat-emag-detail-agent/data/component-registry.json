@@ -25,6 +25,12 @@
       "role": "EXCITAT/X-City wordmarks, badges, transparent overlays, and brand motion components.",
       "route_support": ["stable_listing", "premium_listing"],
       "definition_path": "components/brand-identity/README.md"
+    },
+    {
+      "family_id": "micro-labels",
+      "role": "Small ordering, marker, proof-chip, and status-label components such as E2 marker and rank strips.",
+      "route_support": ["stable_listing", "premium_listing"],
+      "definition_path": "components/micro-labels/README.md"
     }
   ],
   "required_component_fields": [
@@ -87,6 +93,30 @@
       "renderer": "renderers/brand-identity-renderer.contract.md",
       "validator": "validators/VALIDATION_RULES.md",
       "example_refs": []
+    },
+    {
+      "component_id": "e2_marker_chip",
+      "component_family": "micro-labels",
+      "output_type": "html_or_composite_overlay",
+      "allowed_routes": ["stable_listing", "premium_listing"],
+      "buyer_question": "Which product family, module state, or ordered proof is this?",
+      "required_inputs": ["label_text", "meaning", "allowed_context", "static_fallback"],
+      "failure_modes": ["unsupported_meaning", "too_small_to_read", "looks_like_fake_badge", "missing_static_fallback"],
+      "renderer": "renderers/html-display-renderer.contract.md",
+      "validator": "validators/VALIDATION_RULES.md",
+      "example_refs": ["examples/component-gallery/gif-motion-html-preview.html"]
+    },
+    {
+      "component_id": "rank_number_strip",
+      "component_family": "micro-labels",
+      "output_type": "html_or_composite_overlay",
+      "allowed_routes": ["stable_listing", "premium_listing"],
+      "buyer_question": "What order should the buyer read these proof points in?",
+      "required_inputs": ["rank_count", "proof_labels", "module_context", "static_fallback"],
+      "failure_modes": ["unclear_order", "too_many_items", "too_small_to_read", "missing_data_edit_id"],
+      "renderer": "renderers/html-display-renderer.contract.md",
+      "validator": "validators/VALIDATION_RULES.md",
+      "example_refs": ["examples/component-gallery/gif-motion-html-preview.html"]
     }
   ]
 }

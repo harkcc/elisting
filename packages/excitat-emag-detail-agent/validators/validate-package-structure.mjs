@@ -13,6 +13,8 @@ const requiredPaths = [
   'data/guard-pipeline.json',
   'data/stable-component-catalog.json',
   'data/detail-module-catalog.json',
+  'components/gif-motion/component-candidates.md',
+  'components/micro-labels/README.md',
   'image-workflow/IMAGE_PROMPT_CONTRACT.md',
   'image-workflow/provider-profiles/openai-gpt-image.md',
   'image-workflow/provider-profiles/nanobanana2.md',
@@ -28,7 +30,8 @@ const requiredPaths = [
   'spec/media-asset-index.json',
   'spec/qa-report.json',
   'spec/repair-plan.md',
-  'spec/execute-report.json'
+  'spec/execute-report.json',
+  'examples/component-gallery/gif-motion-html-preview.html'
 ];
 
 const failures = [];

@@ -26,6 +26,12 @@ validators/               Guard rules and package validation.
 examples/                 Approved examples only.
 ```
 
+## First Component Candidates
+
+- `components/gif-motion/component-candidates.md` lists the first 16 small motion / brand / micro-label candidates.
+- `examples/component-gallery/gif-motion-html-preview.html` is the current HTML/CSS preview page for review.
+- `components/micro-labels/README.md` defines E2 marker, rank strip, proof chip, and related ordering labels.
+
 ## Production Loop
 
 ```text
