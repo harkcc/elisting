@@ -56,6 +56,7 @@ GIF/WebP/PNG and embedded through simple image HTML. See:
 - `examples/d6mhw43bm-component-application/adapted-gif-component-gallery.html`
 - `examples/d6mhw43bm-component-application/adapted-listing-flow-demo.html`
 - `examples/stable-16-component-trial/stable-16-component-trial.html`
+- `examples/open-design-stable-gif-test/index.html`
 
 ## Production Loop
 

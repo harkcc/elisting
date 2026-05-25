@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Design Stable GIF Listing Test</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --surface: #ffffff;
+      --ink: #141b26;
+      --muted: #677084;
+      --line: #d8dee8;
+      --dark: #090e15;
+      --dark-2: #111a26;
+      --accent: #f5b735;
+      --green: #45bf7a;
+      --blue: #2aa9ff;
+      --radius: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .page {
+      width: min(1140px, calc(100vw - 24px));
+      margin: 0 auto;
+      padding: 22px 0 44px;
+    }
+
+    .module {
+      margin: 0 0 18px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      overflow: hidden;
+    }
+
+    .module.light {
+      padding: 26px;
+      border-radius: var(--radius);
+    }
+
+    .hero img,
+    .media img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .micro-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .9fr 1.15fr 1fr;
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    .micro-card {
+      min-height: 158px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .micro-title {
+      margin: 0 0 8px;
+      font-size: 15px;
+      color: var(--muted);
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .wordmark {
+      position: relative;
+      display: inline-block;
+      width: fit-content;
+      min-width: 184px;
+      padding: 16px 22px;
+      border-radius: 9px;
+      background: #101722;
+      color: #fff;
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: .02em;
+      overflow: hidden;
+    }
+
+    .wordmark::after,
+    .corner-badge::after {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      width: 28%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.72), transparent);
+      transform: translateX(-180%) rotate(18deg);
+      animation: slowShine 5.2s ease-in-out infinite;
+    }
+
+    @keyframes slowShine {
+      0%, 28% { transform: translateX(-190%) rotate(18deg); }
+      65%, 100% { transform: translateX(460%) rotate(18deg); }
+    }
+
+    .corner-badge {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      width: fit-content;
+      padding: 11px 18px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      font-size: 22px;
+      font-weight: 900;
+      overflow: hidden;
+    }
+
+    .status-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 0 rgba(69, 191, 122, .24);
+      animation: pulseDot 2.6s ease-out infinite;
+      flex: none;
+    }
+
+    @keyframes pulseDot {
+      0% { box-shadow: 0 0 0 0 rgba(69, 191, 122, .30); }
+      72% { box-shadow: 0 0 0 18px rgba(69, 191, 122, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(69, 191, 122, 0); }
+    }
+
+    .rank-strip {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 4px;
+    }
+
+    .rank-strip span {
+      min-width: 62px;
+      text-align: center;
+      padding: 12px 14px;
+      border-radius: 9px;
+      background: #eef8f1;
+      color: #14764b;
+      font-size: 24px;
+      font-weight: 900;
+    }
+
+    .rank-strip span:first-child {
+      box-shadow: 0 0 0 7px rgba(69, 191, 122, .12);
+      animation: rankBreathe 4.4s ease-in-out infinite;
+    }
+
+    @keyframes rankBreathe {
+      0%, 100% { transform: translateY(0); box-shadow: 0 0 0 7px rgba(69, 191, 122, .10); }
+      50% { transform: translateY(-2px); box-shadow: 0 0 0 11px rgba(69, 191, 122, .05); }
+    }
+
+    .point-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .copy-block h1 {
+      margin: 0 0 10px;
+      font-size: 34px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    .copy-block p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .proof-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .proof-row {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 12px;
+      align-items: center;
+      min-height: 58px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: #fbfcfe;
+    }
+
+    .num {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #fff3d2;
+      color: #97620a;
+      font-weight: 900;
+    }
+
+    .proof-row strong {
+      display: block;
+      margin-bottom: 2px;
+      font-size: 16px;
+    }
+
+    .proof-row span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .trust-band {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .trust-card {
+      position: relative;
+      padding: 26px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(245, 183, 53, .45);
+      background: var(--dark);
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .trust-card::before {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 2px solid rgba(245, 183, 53, .9);
+      border-radius: 18px;
+      opacity: .88;
+      animation: softGlow 5s ease-in-out infinite;
+    }
+
+    @keyframes softGlow {
+      0%, 100% { opacity: .42; }
+      50% { opacity: .95; }
+    }
+
+    .trust-card h2,
+    .trust-card p {
+      position: relative;
+      margin: 0;
+    }
+
+    .trust-card h2 {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .trust-card p {
+      color: #cfd8e5;
+      max-width: 460px;
+    }
+
+    .assist-card {
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .assist-card h2 {
+      margin: 0 0 14px;
+      font-size: 24px;
+    }
+
+    .assist-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .assist-tags span {
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fbfcfe;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .export-strip {
+      padding: 20px 24px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      color: var(--muted);
+    }
+
+    .export-strip strong { color: var(--ink); }
+
+    @media (max-width: 760px) {
+      .page { width: min(390px, calc(100vw - 16px)); padding-top: 12px; }
+      .micro-grid,
+      .point-layout,
+      .trust-band {
+        grid-template-columns: 1fr;
+      }
+      .module.light,
+      .trust-card,
+      .assist-card {
+        padding: 18px;
+      }
+      .copy-block h1 {
+        font-size: 26px;
+      }
+      .wordmark {
+        min-width: 150px;
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="module hero" data-component-id="motion_shine_sweep_gold" data-edit-id="od-test-hero">
+      <img src="../stable-16-component-trial/assets/motion_shine_sweep_gold.gif" alt="Black gold premium banner">
+    </section>
+
+    <section class="module light micro-grid" data-component-id="brand_identity_micro_set" data-edit-id="od-test-micro-set">
+      <article class="micro-card" data-component-id="brand_wordmark_shine" data-edit-id="od-test-wordmark">
+        <p class="micro-title">Brand wordmark</p>
+        <div class="wordmark">X-CITY</div>
+      </article>
+      <article class="micro-card" data-component-id="corner_badge_shine" data-edit-id="od-test-badge">
+        <p class="micro-title">Corner badge</p>
+        <div class="corner-badge"><span class="status-dot"></span>EXCITAT</div>
+      </article>
+      <article class="micro-card" data-component-id="rank_number_strip" data-edit-id="od-test-rank">
+        <p class="micro-title">Reading order</p>
+        <div class="rank-strip"><span>01</span><span>02</span><span>03</span></div>
+      </article>
+      <article class="micro-card" data-component-id="motion_pulse_dot" data-edit-id="od-test-pulse">
+        <p class="micro-title">Verified point</p>
+        <span class="status-dot"></span>
+      </article>
+    </section>
+
+    <section class="module light point-layout" data-component-id="rank_number_strip" data-edit-id="od-test-proof-flow">
+      <div class="copy-block">
+        <h1>Three Buyer Questions, One Quiet Sequence</h1>
+        <p>Use the small motion pieces only after the text plan is stable. The numbers guide reading order; they are not decoration.</p>
+      </div>
+      <div class="proof-list">
+        <div class="proof-row">
+          <div class="num">1</div>
+          <div><strong>Fit</strong><span>Compatibility or sizing explanation.</span></div>
+        </div>
+        <div class="proof-row">
+          <div class="num">2</div>
+          <div><strong>Power</strong><span>Specification from product truth pack.</span></div>
+        </div>
+        <div class="proof-row">
+          <div class="num">3</div>
+          <div><strong>Care</strong><span>Instruction or use note when needed.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="module media" data-component-id="motion_step_highlight_3" data-edit-id="od-test-step-gif">
+      <img src="../stable-16-component-trial/assets/motion_step_highlight_3.gif" alt="Three-step highlight GIF">
+    </section>
+
+    <section class="trust-band" data-edit-id="od-test-trust-band">
+      <article class="trust-card" data-component-id="motion_soft_glow_border" data-edit-id="od-test-soft-trust">
+        <h2>Soft Trust Card</h2>
+        <p>Slow border motion is reserved for instruction, proof, or trust modules. It should not appear beside every claim.</p>
+      </article>
+      <article class="assist-card" data-component-id="stable_gif_guard" data-edit-id="od-test-assist-guard">
+        <h2>Reference / Assist / Guard</h2>
+        <div class="assist-tags">
+          <span>Reference: good store GIF</span>
+          <span>Assist: text plan</span>
+          <span>Assist: color role</span>
+          <span>Guard: no fake proof</span>
+          <span>Guard: one accent</span>
+          <span>Guard: slow motion</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="export-strip" data-component-id="publish_guard" data-edit-id="od-test-publish">
+      <strong>Publish rule:</strong> this local HTML demonstrates the design. Final eMAG output still exports GIF/PNG media and embeds it with simple <strong>p/img</strong> snippets.
+    </section>
+  </main>
+</body>
+</html>
+

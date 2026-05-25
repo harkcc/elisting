@@ -50,6 +50,7 @@ const requiredPaths = [
   'examples/d6mhw43bm-component-application/media_asset_index.json',
   'examples/stable-16-component-trial/stable-16-component-trial.html',
   'examples/stable-16-component-trial/component_trial_report.json',
+  'examples/open-design-stable-gif-test/index.html',
   'validators/validate-emag-detail-html.py'
 ];
 
