@@ -1,0 +1,81 @@
+{
+  "path": "packages/excitat-emag-detail-agent/examples/d6mhw43bm-component-application/adapted-listing-flow-demo.html",
+  "status": "pass",
+  "metrics": {
+    "images": 5,
+    "gifImages": 5,
+    "tables": 3,
+    "inlineStyles": 22,
+    "centerStyles": 9,
+    "desktopWidthImages": 5
+  },
+  "topTags": [
+    [
+      "td",
+      8
+    ],
+    [
+      "strong",
+      8
+    ],
+    [
+      "br",
+      8
+    ],
+    [
+      "p",
+      5
+    ],
+    [
+      "img",
+      5
+    ],
+    [
+      "table",
+      3
+    ],
+    [
+      "tr",
+      3
+    ],
+    [
+      "h2",
+      1
+    ]
+  ],
+  "imageHosts": [
+    [
+      "(unknown)",
+      5
+    ]
+  ],
+  "violations": [],
+  "warnings": [
+    {
+      "level": "info",
+      "code": "gif_detail_media_accepted",
+      "message": "5 GIF image(s) found; accepted for detail HTML, still separate from main-image upload rules"
+    },
+    {
+      "level": "warning",
+      "code": "table_gray_zone",
+      "message": "3 table(s) found"
+    },
+    {
+      "level": "warning",
+      "code": "external_image_hosts",
+      "message": "External image host(s) found",
+      "hosts": [
+        [
+          "(unknown)",
+          5
+        ]
+      ]
+    },
+    {
+      "level": "warning",
+      "code": "desktop_width_bias",
+      "message": "5 image(s) look desktop-width-biased (>800 or 1140-style)"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "source": "/Users/cc/Desktop/photo_show/output/emag_exit_two_product_stable_components_v4/assets/D6MHW43BM/03.jpg",
+  "size": [
+    1140,
+    456
+  ],
+  "accent": [
+    36,
+    169,
+    255
+  ],
+  "asset_count": 12,
+  "assets": [
+    {
+      "component_id": "motion_shine_sweep",
+      "file": "motion_shine_sweep.gif",
+      "output_type": "gif",
+      "usage": "Hero banner / premium attention",
+      "production_embed": "<p data-component-id=\"motion_shine_sweep\" data-edit-id=\"motion_shine_sweep-01\" style=\"text-align:center;margin:0 0 14px;\"><img src=\"assets/generated/motion_shine_sweep.gif\" width=\"1140\" alt=\"Hero banner / premium attention\" style=\"max-width:100%;height:auto;\"></p>",
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "component_id": "motion_icon_sequential_glow",
+      "file": "motion_icon_sequential_glow.gif",
+      "output_type": "gif",
+      "usage": "123 sequence / proof chips",
+      "production_embed": "<p data-component-id=\"motion_icon_sequential_glow\" data-edit-id=\"motion_icon_sequential_glow-01\" style=\"text-align:center;margin:0 0 14px;\"><img src=\"assets/generated/motion_icon_sequential_glow.gif\" width=\"1140\" alt=\"123 sequence / proof chips\" style=\"max-width:100%;height:auto;\"></p>",
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "component_id": "motion_border_breathing",
+      "file": "motion_border_breathing.gif",
+      "output_type": "gif",
+      "usage": "Important note / trust closer",
+      "production_embed": "<p data-component-id=\"motion_border_breathing\" data-edit-id=\"motion_border_breathing-01\" style=\"text-align:center;margin:0 0 14px;\"><img src=\"assets/generated/motion_border_breathing.gif\" width=\"1140\" alt=\"Important note / trust closer\" style=\"max-width:100%;height:auto;\"></p>",
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "component_id": "motion_product_edge_glow",
+      "file": "motion_product_edge_glow.gif",
+      "output_type": "gif",
+      "usage": "Product detail focus",
+      "production_embed": "<p data-component-id=\"motion_product_edge_glow\" data-edit-id=\"motion_product_edge_glow-01\" style=\"text-align:center;margin:0 0 14px;\"><img src=\"assets/generated/motion_product_edge_glow.gif\" width=\"1140\" alt=\"Product detail focus\" style=\"max-width:100%;height:auto;\"></p>",
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "component_id": "motion_background_light_streak",
+      "file": "motion_background_light_streak.gif",
+      "output_type": "gif",
+      "usage": "Technical energy banner",
+      "production_embed": "<p data-component-id=\"motion_background_light_streak\" data-edit-id=\"motion_background_light_streak-01\" style=\"text-align:center;margin:0 0 14px;\"><img src=\"assets/generated/motion_background_light_streak.gif\" width=\"1140\" alt=\"Technical energy banner\" style=\"max-width:100%;height:auto;\"></p>",
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "component_id": "motion_dotted_twinkle",
+      "file": "motion_dotted_twinkle.gif",
+      "output_type": "gif",
+      "usage": "Brand texture",
+      "production_embed": "<p data-component-id=\"motion_dotted_twinkle\" data-edit-id=\"motion_dotted_twinkle-01\" style=\"text-align:center;margin:0 0 14px;\"><img src=\"assets/generated/motion_dotted_twinkle.gif\" width=\"1140\" alt=\"Brand texture\" style=\"max-width:100%;height:auto;\"></p>",
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "component_id": "motion_step_highlight",
+      "file": "motion_step_highlight.gif",
+      "output_type": "gif",
+      "usage": "How-to / steps",
+      "production_embed": "<p data-component-id=\"motion_step_highlight\" data-edit-id=\"motion_step_highlight-01\" style=\"text-align:center;margin:0 0 14px;\"><img src=\"assets/generated/motion_step_highlight.gif\" width=\"1140\" alt=\"How-to / steps\" style=\"max-width:100%;height:auto;\"></p>",
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "component_id": "motion_before_after_wipe",
+      "file": "motion_before_after_wipe.gif",
+      "output_type": "gif",
+      "usage": "Evidence-based comparison",
+      "production_embed": "<p data-component-id=\"motion_before_after_wipe\" data-edit-id=\"motion_before_after_wipe-01\" style=\"text-align:center;margin:0 0 14px;\"><img src=\"assets/generated/motion_before_after_wipe.gif\" width=\"1140\" alt=\"Evidence-based comparison\" style=\"max-width:100%;height:auto;\"></p>",
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "component_id": "motion_magnifier_pulse",
+      "file": "motion_magnifier_pulse.gif",
+      "output_type": "gif",
+      "usage": "Detail inspection",
+      "production_embed": "<p data-component-id=\"motion_magnifier_pulse\" data-edit-id=\"motion_magnifier_pulse-01\" style=\"text-align:center;margin:0 0 14px;\"><img src=\"assets/generated/motion_magnifier_pulse.gif\" width=\"1140\" alt=\"Detail inspection\" style=\"max-width:100%;height:auto;\"></p>",
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "component_id": "motion_parcel_micro_motion",
+      "file": "motion_parcel_micro_motion.gif",
+      "output_type": "gif",
+      "usage": "Brand/package trust",
+      "production_embed": "<p data-component-id=\"motion_parcel_micro_motion\" data-edit-id=\"motion_parcel_micro_motion-01\" style=\"text-align:center;margin:0 0 14px;\"><img src=\"assets/generated/motion_parcel_micro_motion.gif\" width=\"1140\" alt=\"Brand/package trust\" style=\"max-width:100%;height:auto;\"></p>",
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "component_id": "brand_wordmark_side_tag",
+      "file": "brand_wordmark_side_tag.png",
+      "output_type": "png",
+      "usage": "Brand side tag",
+      "production_embed": "<p data-component-id=\"brand_wordmark_side_tag\" data-edit-id=\"brand_wordmark_side_tag-01\" style=\"text-align:center;margin:0 0 14px;\"><img src=\"assets/generated/brand_wordmark_side_tag.png\" width=\"1140\" alt=\"Brand side tag\" style=\"max-width:100%;height:auto;\"></p>",
+      "guard": [
+        "Static fallback candidate",
+        "Brand text is rendered locally",
+        "Do not imitate platform or certification badges"
+      ]
+    },
+    {
+      "component_id": "e2_marker_chip_board",
+      "file": "e2_marker_chip_board.png",
+      "output_type": "png",
+      "usage": "E2 marker board",
+      "production_embed": "<p data-component-id=\"e2_marker_chip_board\" data-edit-id=\"e2_marker_chip_board-01\" style=\"text-align:center;margin:0 0 14px;\"><img src=\"assets/generated/e2_marker_chip_board.png\" width=\"1140\" alt=\"E2 marker board\" style=\"max-width:100%;height:auto;\"></p>",
+      "guard": [
+        "Static fallback candidate",
+        "Brand text is rendered locally",
+        "Do not imitate platform or certification badges"
+      ]
+    }
+  ]
+}

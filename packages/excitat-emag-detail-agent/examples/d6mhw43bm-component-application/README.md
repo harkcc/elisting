@@ -25,6 +25,22 @@ examples/d6mhw43bm-component-application/benchmark-push-demo.html
 This variant intentionally uses the stronger live-store pattern: colored
 background bands, table layout, small image icons, and embedded GIF media.
 
+Image-adapted GIF Scale examples:
+
+```text
+examples/d6mhw43bm-component-application/adapted-gif-component-gallery.html
+examples/d6mhw43bm-component-application/adapted-listing-flow-demo.html
+```
+
+These are generated from the source product image with:
+
+```bash
+/Users/cc/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 \
+  packages/excitat-emag-detail-agent/renderers/gif-motion-renderer.py \
+  --source /Users/cc/Desktop/photo_show/output/emag_exit_two_product_stable_components_v4/assets/D6MHW43BM/03.jpg \
+  --out packages/excitat-emag-detail-agent/examples/d6mhw43bm-component-application/assets/generated
+```
+
 Validation:
 
 ```bash
@@ -37,4 +53,10 @@ python3 packages/excitat-emag-detail-agent/validators/validate-emag-detail-html.
 python3 packages/excitat-emag-detail-agent/validators/validate-emag-detail-html.py \
   packages/excitat-emag-detail-agent/examples/d6mhw43bm-component-application/benchmark-push-demo.html \
   --out packages/excitat-emag-detail-agent/examples/d6mhw43bm-component-application/benchmark_push_validation_report.json
+```
+
+```bash
+python3 packages/excitat-emag-detail-agent/validators/validate-emag-detail-html.py \
+  packages/excitat-emag-detail-agent/examples/d6mhw43bm-component-application/adapted-listing-flow-demo.html \
+  --out packages/excitat-emag-detail-agent/examples/d6mhw43bm-component-application/adapted_listing_flow_validation_report.json
 ```

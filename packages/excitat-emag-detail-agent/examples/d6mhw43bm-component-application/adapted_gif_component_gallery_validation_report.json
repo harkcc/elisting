@@ -1,0 +1,60 @@
+{
+  "path": "packages/excitat-emag-detail-agent/examples/d6mhw43bm-component-application/adapted-gif-component-gallery.html",
+  "status": "pass",
+  "metrics": {
+    "images": 12,
+    "gifImages": 10,
+    "tables": 0,
+    "inlineStyles": 26,
+    "centerStyles": 14,
+    "desktopWidthImages": 12
+  },
+  "topTags": [
+    [
+      "p",
+      13
+    ],
+    [
+      "img",
+      12
+    ],
+    [
+      "strong",
+      2
+    ],
+    [
+      "h2",
+      1
+    ]
+  ],
+  "imageHosts": [
+    [
+      "(unknown)",
+      12
+    ]
+  ],
+  "violations": [],
+  "warnings": [
+    {
+      "level": "info",
+      "code": "gif_detail_media_accepted",
+      "message": "10 GIF image(s) found; accepted for detail HTML, still separate from main-image upload rules"
+    },
+    {
+      "level": "warning",
+      "code": "external_image_hosts",
+      "message": "External image host(s) found",
+      "hosts": [
+        [
+          "(unknown)",
+          12
+        ]
+      ]
+    },
+    {
+      "level": "warning",
+      "code": "desktop_width_bias",
+      "message": "12 image(s) look desktop-width-biased (>800 or 1140-style)"
+    }
+  ]
+}

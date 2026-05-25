@@ -1,0 +1,141 @@
+{
+  "version": "2026-05-25.v1",
+  "workflow": "image-workflow/GIF_SCALE_WORKFLOW.md",
+  "renderer": "renderers/gif-motion-renderer.py",
+  "principle": "Text and base layout come first; GIF effects are added last with Reference, Assist, Guard, and Delivery records.",
+  "cards": [
+    {
+      "component_id": "motion_shine_sweep",
+      "component_name": "Image-Adapted Shine Sweep",
+      "tags": ["hero_banner", "premium_attention", "brand_intro", "image_adapted"],
+      "module_fit": ["hero_banner", "brand_trust"],
+      "reference": "Good-store full-width GIF banner rhythm; source product image determines crop and accent color.",
+      "assist": ["source_product_image", "headline", "subtitle", "accent_color", "safe_text_zone"],
+      "guard": ["do_not_cover_product_detail", "no_css_keyframes_in_final_html", "no_generated_brand_text", "mobile_text_readable"],
+      "delivery": "GIF detail media plus static first-frame fallback when needed",
+      "example_asset": "examples/d6mhw43bm-component-application/assets/generated/motion_shine_sweep.gif"
+    },
+    {
+      "component_id": "motion_icon_sequential_glow",
+      "component_name": "Image-Adapted Icon Sequential Glow",
+      "tags": ["123_sequence", "feature_intro", "proof_chips", "reading_order"],
+      "module_fit": ["key_points_1234", "feature_intro"],
+      "reference": "Good-store feature rows with small icon slots and a controlled read order.",
+      "assist": ["three_labels", "icon_semantics", "accent_color", "module_purpose"],
+      "guard": ["max_four_items", "icon_meaning_must_be_clear", "no_fake_certification_icon", "mobile_labels_short"],
+      "delivery": "GIF or static PNG if repeated motion makes the row too busy",
+      "example_asset": "examples/d6mhw43bm-component-application/assets/generated/motion_icon_sequential_glow.gif"
+    },
+    {
+      "component_id": "motion_border_breathing",
+      "component_name": "Image-Adapted Border Breathing",
+      "tags": ["important_notice", "trust_closer", "low_motion", "background_color"],
+      "module_fit": ["trust_builder", "faq_objection"],
+      "reference": "Colored notice blocks from live detail HTML, rendered as media for stable motion.",
+      "assist": ["notice_copy", "source_image", "accent_color", "background_mode"],
+      "guard": ["no_service_promise_without_evidence", "only_one_breathing_notice_per_listing", "avoid_alarm_like_colors"],
+      "delivery": "GIF detail media with deterministic text overlay",
+      "example_asset": "examples/d6mhw43bm-component-application/assets/generated/motion_border_breathing.gif"
+    },
+    {
+      "component_id": "motion_product_edge_glow",
+      "component_name": "Image-Adapted Product Edge Glow",
+      "tags": ["product_display", "technical_focus", "detail_emphasis", "image_adapted"],
+      "module_fit": ["product_display", "specification_board"],
+      "reference": "Technical detail banner where motion emphasizes one product zone without moving the product.",
+      "assist": ["source_product_image", "focus_box", "accent_color", "proof_label"],
+      "guard": ["product_body_must_not_move", "focus_box_must_match_real_detail", "no_unsupported_quality_claim"],
+      "delivery": "GIF detail media",
+      "example_asset": "examples/d6mhw43bm-component-application/assets/generated/motion_product_edge_glow.gif"
+    },
+    {
+      "component_id": "motion_background_light_streak",
+      "component_name": "Image-Adapted Background Light Streak",
+      "tags": ["technical_banner", "energy", "hero_banner", "low_product_risk"],
+      "module_fit": ["hero_banner", "product_display"],
+      "reference": "Good-store dark technical banners with motion in the background, not in the product.",
+      "assist": ["source_product_image", "accent_color", "headline", "safe_light_path"],
+      "guard": ["light_must_not_hide_text", "product_must_remain_still", "no_flashy_high_frequency_motion"],
+      "delivery": "GIF detail media",
+      "example_asset": "examples/d6mhw43bm-component-application/assets/generated/motion_background_light_streak.gif"
+    },
+    {
+      "component_id": "motion_dotted_twinkle",
+      "component_name": "Image-Adapted Dotted Twinkle Texture",
+      "tags": ["brand_texture", "premium_background", "trust_builder", "black_gold_or_blue"],
+      "module_fit": ["brand_trust", "hero_banner"],
+      "reference": "Subtle dotted background texture seen in premium dark banners.",
+      "assist": ["source_product_image", "accent_color", "brand_text", "safe_density"],
+      "guard": ["dots_cannot_fight_product", "avoid_repeated_dark_blocks", "brand_text_local_only"],
+      "delivery": "GIF detail media or PNG when motion is unnecessary",
+      "example_asset": "examples/d6mhw43bm-component-application/assets/generated/motion_dotted_twinkle.gif"
+    },
+    {
+      "component_id": "motion_step_highlight",
+      "component_name": "Image-Adapted Step Highlight",
+      "tags": ["steps", "how_to_use", "installation", "sequence"],
+      "module_fit": ["key_points_1234", "feature_intro", "package_contents"],
+      "reference": "Live detail pages often use process images; this keeps the process order deterministic.",
+      "assist": ["step_count", "step_labels", "source_image", "highlight_boxes"],
+      "guard": ["do_not_place_numbers_over_existing_text", "max_four_steps", "step_labels_short"],
+      "delivery": "GIF detail media",
+      "example_asset": "examples/d6mhw43bm-component-application/assets/generated/motion_step_highlight.gif"
+    },
+    {
+      "component_id": "motion_before_after_wipe",
+      "component_name": "Image-Adapted Before After Wipe",
+      "tags": ["before_after", "comparison", "evidence_required", "premium_listing"],
+      "module_fit": ["before_after", "product_display"],
+      "reference": "Comparison motion pattern; allowed only when the comparison is source-backed.",
+      "assist": ["before_asset", "after_asset", "comparison_claim", "evidence_id"],
+      "guard": ["requires_evidence", "no_fake_result", "no_ai_product_shape_change"],
+      "delivery": "GIF detail media, otherwise blocked",
+      "example_asset": "examples/d6mhw43bm-component-application/assets/generated/motion_before_after_wipe.gif"
+    },
+    {
+      "component_id": "motion_magnifier_pulse",
+      "component_name": "Image-Adapted Magnifier Pulse",
+      "tags": ["detail_focus", "ports", "materials", "spec_focus"],
+      "module_fit": ["product_display", "specification_board"],
+      "reference": "Good listing detail zoom blocks, made into a controlled GIF focus effect.",
+      "assist": ["source_product_image", "focus_crop", "detail_label", "accent_color"],
+      "guard": ["focus_crop_must_show_real_product", "no_false_material_claim", "magnifier_must_not_cover_key_text"],
+      "delivery": "GIF detail media",
+      "example_asset": "examples/d6mhw43bm-component-application/assets/generated/motion_magnifier_pulse.gif"
+    },
+    {
+      "component_id": "motion_parcel_micro_motion",
+      "component_name": "Brand / Package Micro Motion",
+      "tags": ["brand_trust", "package_contents", "soft_motion", "closer"],
+      "module_fit": ["trust_builder", "package_contents", "brand_side_label"],
+      "reference": "Good-store trust closer with warm package or care signal, but no service promise.",
+      "assist": ["brand_text", "package_copy", "accent_color", "module_purpose"],
+      "guard": ["no_shipping_or_return_promise", "no_fake_service_badge", "brand_text_local_only"],
+      "delivery": "GIF detail media",
+      "example_asset": "examples/d6mhw43bm-component-application/assets/generated/motion_parcel_micro_motion.gif"
+    },
+    {
+      "component_id": "brand_wordmark_side_tag",
+      "component_name": "Image-Adapted Brand Side Tag",
+      "tags": ["brand_identity", "side_label", "static_fallback", "excitat_xcity"],
+      "module_fit": ["brand_side_label", "hero_banner"],
+      "reference": "Brand labels in premium banners; rendered locally for spelling stability.",
+      "assist": ["brand_text", "source_image", "accent_color", "placement"],
+      "guard": ["brand_text_must_be_exact", "no_marketplace_logo", "no_ai_text"],
+      "delivery": "PNG or GIF if a shine pass is added later",
+      "example_asset": "examples/d6mhw43bm-component-application/assets/generated/brand_wordmark_side_tag.png"
+    },
+    {
+      "component_id": "e2_marker_chip_board",
+      "component_name": "E2 Marker Chip Board",
+      "tags": ["e2_marker", "component_state", "guard_marker", "html_display"],
+      "module_fit": ["specification_board", "faq_objection", "brand_side_label"],
+      "reference": "Small marker chips used to classify module purpose and review state.",
+      "assist": ["marker_label", "meaning", "route", "guard_state"],
+      "guard": ["marker_meaning_must_be_defined", "do_not_look_like_certification", "not_for_customer_claims"],
+      "delivery": "PNG or static HTML table",
+      "example_asset": "examples/d6mhw43bm-component-application/assets/generated/e2_marker_chip_board.png"
+    }
+  ]
+}
+

@@ -65,6 +65,222 @@
       "component_id": "proof_check_chip",
       "module": "trust_builder",
       "usage": "small deterministic icon in colored HTML band"
+    },
+    {
+      "asset_id": "generated_motion_shine_sweep",
+      "path": "assets/generated/motion_shine_sweep.gif",
+      "component_id": "motion_shine_sweep",
+      "module": "Hero banner / premium attention",
+      "usage": "image-adapted deterministic GIF component",
+      "source_image": "/Users/cc/Desktop/photo_show/output/emag_exit_two_product_stable_components_v4/assets/D6MHW43BM/03.jpg",
+      "accent": [
+        36,
+        169,
+        255
+      ],
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "asset_id": "generated_motion_icon_sequential_glow",
+      "path": "assets/generated/motion_icon_sequential_glow.gif",
+      "component_id": "motion_icon_sequential_glow",
+      "module": "123 sequence / proof chips",
+      "usage": "image-adapted deterministic GIF component",
+      "source_image": "/Users/cc/Desktop/photo_show/output/emag_exit_two_product_stable_components_v4/assets/D6MHW43BM/03.jpg",
+      "accent": [
+        36,
+        169,
+        255
+      ],
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "asset_id": "generated_motion_border_breathing",
+      "path": "assets/generated/motion_border_breathing.gif",
+      "component_id": "motion_border_breathing",
+      "module": "Important note / trust closer",
+      "usage": "image-adapted deterministic GIF component",
+      "source_image": "/Users/cc/Desktop/photo_show/output/emag_exit_two_product_stable_components_v4/assets/D6MHW43BM/03.jpg",
+      "accent": [
+        36,
+        169,
+        255
+      ],
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "asset_id": "generated_motion_product_edge_glow",
+      "path": "assets/generated/motion_product_edge_glow.gif",
+      "component_id": "motion_product_edge_glow",
+      "module": "Product detail focus",
+      "usage": "image-adapted deterministic GIF component",
+      "source_image": "/Users/cc/Desktop/photo_show/output/emag_exit_two_product_stable_components_v4/assets/D6MHW43BM/03.jpg",
+      "accent": [
+        36,
+        169,
+        255
+      ],
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "asset_id": "generated_motion_background_light_streak",
+      "path": "assets/generated/motion_background_light_streak.gif",
+      "component_id": "motion_background_light_streak",
+      "module": "Technical energy banner",
+      "usage": "image-adapted deterministic GIF component",
+      "source_image": "/Users/cc/Desktop/photo_show/output/emag_exit_two_product_stable_components_v4/assets/D6MHW43BM/03.jpg",
+      "accent": [
+        36,
+        169,
+        255
+      ],
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "asset_id": "generated_motion_dotted_twinkle",
+      "path": "assets/generated/motion_dotted_twinkle.gif",
+      "component_id": "motion_dotted_twinkle",
+      "module": "Brand texture",
+      "usage": "image-adapted deterministic GIF component",
+      "source_image": "/Users/cc/Desktop/photo_show/output/emag_exit_two_product_stable_components_v4/assets/D6MHW43BM/03.jpg",
+      "accent": [
+        36,
+        169,
+        255
+      ],
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "asset_id": "generated_motion_step_highlight",
+      "path": "assets/generated/motion_step_highlight.gif",
+      "component_id": "motion_step_highlight",
+      "module": "How-to / steps",
+      "usage": "image-adapted deterministic GIF component",
+      "source_image": "/Users/cc/Desktop/photo_show/output/emag_exit_two_product_stable_components_v4/assets/D6MHW43BM/03.jpg",
+      "accent": [
+        36,
+        169,
+        255
+      ],
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "asset_id": "generated_motion_before_after_wipe",
+      "path": "assets/generated/motion_before_after_wipe.gif",
+      "component_id": "motion_before_after_wipe",
+      "module": "Evidence-based comparison",
+      "usage": "image-adapted deterministic GIF component",
+      "source_image": "/Users/cc/Desktop/photo_show/output/emag_exit_two_product_stable_components_v4/assets/D6MHW43BM/03.jpg",
+      "accent": [
+        36,
+        169,
+        255
+      ],
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "asset_id": "generated_motion_magnifier_pulse",
+      "path": "assets/generated/motion_magnifier_pulse.gif",
+      "component_id": "motion_magnifier_pulse",
+      "module": "Detail inspection",
+      "usage": "image-adapted deterministic GIF component",
+      "source_image": "/Users/cc/Desktop/photo_show/output/emag_exit_two_product_stable_components_v4/assets/D6MHW43BM/03.jpg",
+      "accent": [
+        36,
+        169,
+        255
+      ],
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "asset_id": "generated_motion_parcel_micro_motion",
+      "path": "assets/generated/motion_parcel_micro_motion.gif",
+      "component_id": "motion_parcel_micro_motion",
+      "module": "Brand/package trust",
+      "usage": "image-adapted deterministic GIF component",
+      "source_image": "/Users/cc/Desktop/photo_show/output/emag_exit_two_product_stable_components_v4/assets/D6MHW43BM/03.jpg",
+      "accent": [
+        36,
+        169,
+        255
+      ],
+      "guard": [
+        "GIF is embedded as image media only",
+        "Text and proof are deterministic overlays",
+        "Do not use if mobile text is unreadable"
+      ]
+    },
+    {
+      "asset_id": "generated_brand_wordmark_side_tag",
+      "path": "assets/generated/brand_wordmark_side_tag.png",
+      "component_id": "brand_wordmark_side_tag",
+      "module": "Brand side tag",
+      "usage": "image-adapted deterministic static component",
+      "source_image": "/Users/cc/Desktop/photo_show/output/emag_exit_two_product_stable_components_v4/assets/D6MHW43BM/03.jpg",
+      "accent": [
+        36,
+        169,
+        255
+      ],
+      "guard": [
+        "Static fallback candidate",
+        "Brand text is rendered locally",
+        "Do not imitate platform or certification badges"
+      ]
+    },
+    {
+      "asset_id": "generated_e2_marker_chip_board",
+      "path": "assets/generated/e2_marker_chip_board.png",
+      "component_id": "e2_marker_chip_board",
+      "module": "E2 marker board",
+      "usage": "image-adapted deterministic static component",
+      "source_image": "/Users/cc/Desktop/photo_show/output/emag_exit_two_product_stable_components_v4/assets/D6MHW43BM/03.jpg",
+      "accent": [
+        36,
+        169,
+        255
+      ],
+      "guard": [
+        "Static fallback candidate",
+        "Brand text is rendered locally",
+        "Do not imitate platform or certification badges"
+      ]
     }
   ]
 }
