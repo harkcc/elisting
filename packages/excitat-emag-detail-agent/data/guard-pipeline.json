@@ -1,0 +1,45 @@
+{
+  "pipeline_version": "2026-05-25.v1",
+  "guards": [
+    {
+      "guard_id": "InputGuard",
+      "stage": "pre_plan",
+      "purpose": "Verify that product facts, specs, assets, and output goal are present enough to choose a route."
+    },
+    {
+      "guard_id": "EvidenceGuard",
+      "stage": "pre_plan_and_publish",
+      "purpose": "Block unsupported review, rating, warranty, return, shipping, seller-service, and platform-endorsement claims."
+    },
+    {
+      "guard_id": "DesignGuard",
+      "stage": "plan_and_verify",
+      "purpose": "Check the page against DESIGN.md rhythm, brand, typography, and anti-pattern rules."
+    },
+    {
+      "guard_id": "TemplateGuard",
+      "stage": "plan_and_verify",
+      "purpose": "Ensure selected components match product type, buyer questions, and available inputs."
+    },
+    {
+      "guard_id": "PromptGuard",
+      "stage": "image_job",
+      "purpose": "Ensure image jobs include no readable text, no fake badge, no distorted product, and no marketplace mark constraints."
+    },
+    {
+      "guard_id": "RenderGuard",
+      "stage": "render",
+      "purpose": "Check generated HTML/assets for required IDs, output files, and embed boundaries."
+    },
+    {
+      "guard_id": "VisualQAGuard",
+      "stage": "verify",
+      "purpose": "Check 390px readability, image repetition, dark-module rhythm, product drift, and text clipping."
+    },
+    {
+      "guard_id": "PublishGuard",
+      "stage": "execute",
+      "purpose": "Allow final export only when QA report has no blocking issue or has a scoped repair plan."
+    }
+  ]
+}

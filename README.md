@@ -28,6 +28,16 @@ The system is split into three tracks:
 - [Current Retention Map](docs/2026-05-25-current-retention-map.md)
 - [Repo Collaboration Plan](docs/repo-collaboration-plan.md)
 
+## First Agent Package
+
+- [EXCITAT eMAG Detail Agent](packages/excitat-emag-detail-agent/README.md)
+
+Validate the package structure:
+
+```bash
+npm run validate:excitat-emag-detail-agent
+```
+
 ## Initial Source Workspaces
 
 - `/Users/cc/Desktop/photo_show`: current research, scripts, catalogs, references, and generated outputs.

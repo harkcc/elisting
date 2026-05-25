@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ImageCandidate",
+  "type": "object",
+  "required": ["candidate_id", "job_id", "provider", "asset_ref", "status", "qa_refs"],
+  "properties": {
+    "candidate_id": { "type": "string" },
+    "job_id": { "type": "string" },
+    "provider": { "enum": ["openai_gpt_image", "nanobanana2"] },
+    "asset_ref": { "type": "string" },
+    "dimensions": {
+      "type": "object",
+      "required": ["width", "height"],
+      "properties": {
+        "width": { "type": "integer" },
+        "height": { "type": "integer" }
+      }
+    },
+    "status": { "enum": ["candidate", "approved", "rejected", "repair_needed"] },
+    "qa_refs": { "type": "array", "items": { "type": "string" } },
+    "failure_modes": { "type": "array", "items": { "type": "string" } }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "excitat-emag-detail-agent",
+  "name": "EXCITAT eMAG Detail Agent",
+  "description": "Produces EXCITAT listing/detail-page modules through stable components or controlled premium image-generation banners.",
+  "status": "draft",
+  "runtime_target": "agent-platform",
+  "default_route": "stable_listing",
+  "supported_routes": ["stable_listing", "premium_listing"],
+  "supported_image_providers": ["openai_gpt_image", "nanobanana2"],
+  "unsupported_image_providers": ["comfyui"],
+  "required_references": [
+    "DESIGN.md",
+    "DESIGN_FD.md",
+    "data/stable-component-catalog.json",
+    "data/detail-module-catalog.json",
+    "image-workflow/IMAGE_PROMPT_CONTRACT.md",
+    "validators/VALIDATION_RULES.md"
+  ],
+  "output_artifacts": [
+    "detail.html",
+    "preview_mobile.html",
+    "spec/state-design.json",
+    "spec/template-selection.json",
+    "spec/evidence-index.json",
+    "spec/media-asset-index.json",
+    "spec/qa-report.json",
+    "spec/repair-plan.md",
+    "spec/execute-report.json"
+  ],
+  "guard_policy": {
+    "strong_claims_require_evidence": true,
+    "review_identity_requires_source": true,
+    "service_claims_require_source": true,
+    "stable_listing_disallows_image_generation": true,
+    "premium_listing_max_image_jobs": 2,
+    "final_modules_require_data_edit_id": true
+  }
+}

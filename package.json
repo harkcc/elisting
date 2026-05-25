@@ -1,0 +1,9 @@
+{
+  "name": "elisting",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "validate:excitat-emag-detail-agent": "node packages/excitat-emag-detail-agent/validators/validate-package-structure.mjs"
+  }
+}

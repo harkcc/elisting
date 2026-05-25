@@ -1,0 +1,92 @@
+{
+  "registry_version": "2026-05-25.v1",
+  "purpose": "First-phase component registry for stable and premium EXCITAT detail-page production.",
+  "component_families": [
+    {
+      "family_id": "html-display",
+      "role": "Simple eMAG-safe HTML modules for ordering, separators, FAQ, tables, and first-screen anchors.",
+      "route_support": ["stable_listing", "premium_listing"],
+      "definition_path": "components/html-display/README.md"
+    },
+    {
+      "family_id": "gif-motion",
+      "role": "Stable GIF/WebP motion overlays that preserve product readability.",
+      "route_support": ["stable_listing", "premium_listing"],
+      "definition_path": "components/gif-motion/README.md"
+    },
+    {
+      "family_id": "banner-composite",
+      "role": "Image/GIF banner modules assembled from product assets, local text, icons, and optionally generated backgrounds.",
+      "route_support": ["stable_listing", "premium_listing"],
+      "definition_path": "components/banner-composite/README.md"
+    },
+    {
+      "family_id": "brand-identity",
+      "role": "EXCITAT/X-City wordmarks, badges, transparent overlays, and brand motion components.",
+      "route_support": ["stable_listing", "premium_listing"],
+      "definition_path": "components/brand-identity/README.md"
+    }
+  ],
+  "required_component_fields": [
+    "component_id",
+    "component_family",
+    "required_inputs",
+    "buyer_question",
+    "output_type",
+    "allowed_routes",
+    "failure_modes",
+    "renderer",
+    "validator",
+    "example_refs"
+  ],
+  "initial_components": [
+    {
+      "component_id": "first_screen_anchor_triplet",
+      "component_family": "html-display",
+      "output_type": "html",
+      "allowed_routes": ["stable_listing", "premium_listing"],
+      "buyer_question": "What are the three highest-priority reasons to keep reading after the banner?",
+      "required_inputs": ["product_type", "core_result", "top_buyer_questions", "evidence_refs"],
+      "failure_modes": ["internal_sop_copy", "unsupported_claim", "too_long_for_mobile", "missing_data_edit_id"],
+      "renderer": "renderers/html-display-renderer.contract.md",
+      "validator": "validators/VALIDATION_RULES.md",
+      "example_refs": []
+    },
+    {
+      "component_id": "shine_sweep",
+      "component_family": "gif-motion",
+      "output_type": "gif_or_webp",
+      "allowed_routes": ["stable_listing", "premium_listing"],
+      "buyer_question": "How can the brand module feel alive without product deformation?",
+      "required_inputs": ["source_image", "motion_duration", "static_fallback", "media_asset_record"],
+      "failure_modes": ["product_deformation", "mobile_readability_loss", "missing_static_fallback", "file_too_large"],
+      "renderer": "renderers/motion-renderer.contract.md",
+      "validator": "validators/VALIDATION_RULES.md",
+      "example_refs": []
+    },
+    {
+      "component_id": "step_highlight",
+      "component_family": "gif-motion",
+      "output_type": "gif_or_webp",
+      "allowed_routes": ["stable_listing", "premium_listing"],
+      "buyer_question": "How does the buyer use or install this without guessing?",
+      "required_inputs": ["step_labels", "step_images_or_icons", "motion_duration", "static_fallback"],
+      "failure_modes": ["unclear_step_order", "product_deformation", "mobile_readability_loss", "missing_static_fallback"],
+      "renderer": "renderers/motion-renderer.contract.md",
+      "validator": "validators/VALIDATION_RULES.md",
+      "example_refs": []
+    },
+    {
+      "component_id": "brand_wordmark_xcity_static_v1",
+      "component_family": "brand-identity",
+      "output_type": "png_svg_or_html_img",
+      "allowed_routes": ["stable_listing", "premium_listing"],
+      "buyer_question": "How does this page keep a stable brand identity?",
+      "required_inputs": ["brand_text", "variant_id", "background_mode", "output_mode"],
+      "failure_modes": ["misspelled_brand", "model_generated_text", "low_contrast", "missing_transparent_variant"],
+      "renderer": "renderers/brand-identity-renderer.contract.md",
+      "validator": "validators/VALIDATION_RULES.md",
+      "example_refs": []
+    }
+  ]
+}

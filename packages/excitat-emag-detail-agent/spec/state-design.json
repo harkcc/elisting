@@ -1,0 +1,10 @@
+{
+  "spec_version": "2026-05-25.v1",
+  "run_id": "example-run",
+  "route": "stable_listing",
+  "product_type": "example",
+  "brand": "EXCITAT",
+  "output_goal": "eMAG detail page",
+  "image_generation_allowed": false,
+  "status": "template"
+}

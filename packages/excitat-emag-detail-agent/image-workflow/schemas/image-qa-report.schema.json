@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ImageQAReport",
+  "type": "object",
+  "required": ["report_id", "candidate_id", "status", "checks"],
+  "properties": {
+    "report_id": { "type": "string" },
+    "candidate_id": { "type": "string" },
+    "status": { "enum": ["pass", "warning", "fail"] },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["check_id", "status"],
+        "properties": {
+          "check_id": { "type": "string" },
+          "status": { "enum": ["pass", "warning", "fail"] },
+          "message": { "type": "string" }
+        }
+      }
+    },
+    "repair_prompt_ref": { "type": "string" }
+  }
+}

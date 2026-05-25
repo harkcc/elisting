@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ImageJob",
+  "type": "object",
+  "required": ["job_id", "route", "image_type", "provider", "prompt_pattern", "negative_constraints", "post_process"],
+  "properties": {
+    "job_id": { "type": "string" },
+    "route": { "enum": ["premium_listing"] },
+    "image_type": {
+      "enum": ["hero_banner", "product_scene", "background_only", "proof_board", "brand_trust_banner"]
+    },
+    "provider": { "enum": ["openai_gpt_image", "nanobanana2"] },
+    "mode": { "enum": ["text_to_image", "image_to_image", "edit", "background_only", "style_reference"] },
+    "reference_images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["role", "ref"],
+        "properties": {
+          "role": { "enum": ["product_reference", "style_reference", "composition_reference", "brand_reference"] },
+          "ref": { "type": "string" },
+          "rights_status": { "enum": ["owned", "approved", "reference_only", "unknown"] }
+        }
+      }
+    },
+    "prompt_pattern": { "type": "string" },
+    "negative_constraints": { "type": "array", "items": { "type": "string" } },
+    "post_process": { "type": "array", "items": { "type": "string" } },
+    "max_candidates": { "type": "integer", "minimum": 1, "maximum": 4, "default": 2 }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "blueprint_id": "premium-hero-plus-components",
+  "route": "premium_listing",
+  "image_generation_allowed": true,
+  "max_image_jobs": 2,
+  "allowed_image_job_types": ["hero_banner", "product_scene", "background_only", "proof_board", "brand_trust_banner"],
+  "module_sequence": [
+    "premium_generated_or_composite_hero",
+    "first_screen_anchor_triplet",
+    "product_scene_or_proof_banner",
+    "stable_feature_modules",
+    "spec_icon_board",
+    "package_and_usage",
+    "faq_or_review_if_real",
+    "brand_trust_close"
+  ],
+  "required_outputs": [
+    "detail.html",
+    "preview_mobile.html",
+    "spec/state-design.json",
+    "spec/template-selection.json",
+    "spec/evidence-index.json",
+    "spec/media-asset-index.json",
+    "spec/qa-report.json",
+    "spec/repair-plan.md",
+    "spec/execute-report.json"
+  ]
+}

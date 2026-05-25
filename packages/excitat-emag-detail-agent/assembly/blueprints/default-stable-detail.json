@@ -1,0 +1,24 @@
+{
+  "blueprint_id": "default-stable-detail",
+  "route": "stable_listing",
+  "image_generation_allowed": false,
+  "module_sequence": [
+    "existing_or_composite_banner",
+    "first_screen_anchor_triplet",
+    "product_proof_or_feature_band",
+    "spec_table_clean",
+    "package_and_usage",
+    "faq_objection_closer",
+    "brand_identity_or_trust_close"
+  ],
+  "required_outputs": [
+    "detail.html",
+    "preview_mobile.html",
+    "spec/state-design.json",
+    "spec/template-selection.json",
+    "spec/evidence-index.json",
+    "spec/media-asset-index.json",
+    "spec/qa-report.json",
+    "spec/execute-report.json"
+  ]
+}
