@@ -1,0 +1,72 @@
+{
+  "path": "packages/excitat-emag-detail-agent/examples/d6mhw43bm-component-application/demo.html",
+  "status": "pass",
+  "metrics": {
+    "images": 6,
+    "gifImages": 3,
+    "tables": 1,
+    "inlineStyles": 10,
+    "centerStyles": 6,
+    "desktopWidthImages": 0
+  },
+  "topTags": [
+    [
+      "p",
+      6
+    ],
+    [
+      "img",
+      6
+    ],
+    [
+      "td",
+      3
+    ],
+    [
+      "strong",
+      3
+    ],
+    [
+      "br",
+      3
+    ],
+    [
+      "table",
+      1
+    ],
+    [
+      "tr",
+      1
+    ]
+  ],
+  "imageHosts": [
+    [
+      "(unknown)",
+      6
+    ]
+  ],
+  "violations": [],
+  "warnings": [
+    {
+      "level": "info",
+      "code": "gif_detail_media_accepted",
+      "message": "3 GIF image(s) found; accepted for detail HTML, still separate from main-image upload rules"
+    },
+    {
+      "level": "warning",
+      "code": "table_gray_zone",
+      "message": "1 table(s) found"
+    },
+    {
+      "level": "warning",
+      "code": "external_image_hosts",
+      "message": "External image host(s) found",
+      "hosts": [
+        [
+          "(unknown)",
+          6
+        ]
+      ]
+    }
+  ]
+}

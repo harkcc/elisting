@@ -1,0 +1,70 @@
+{
+  "sku": "D6MHW43BM",
+  "route": "stable_listing",
+  "source_run": "/Users/cc/Desktop/photo_show/output/emag_exit_two_product_stable_components_v4/D6MHW43BM",
+  "assets": [
+    {
+      "asset_id": "d6_hero_banner",
+      "path": "assets/v4_exit_hero_banner.gif",
+      "component_id": "motion_shine_sweep_blue",
+      "module": "hero_banner",
+      "usage": "pre-rendered GIF detail media"
+    },
+    {
+      "asset_id": "d6_visual_buffer",
+      "path": "assets/v4_visual_buffer.png",
+      "component_id": "motion_soft_glow_border",
+      "module": "product_display",
+      "usage": "static visual rest module"
+    },
+    {
+      "asset_id": "d6_step_highlight",
+      "path": "assets/v4_step_highlight.gif",
+      "component_id": "motion_step_highlight_3",
+      "module": "key_points_1234",
+      "usage": "pre-rendered GIF step module"
+    },
+    {
+      "asset_id": "d6_spec_board",
+      "path": "assets/v4_spec_icon_board.png",
+      "component_id": "proof_check_chip",
+      "module": "specification_board",
+      "usage": "static deterministic spec board"
+    },
+    {
+      "asset_id": "d6_feedback_preview",
+      "path": "assets/v4_testimonial_feedback_board.png",
+      "component_id": "proof_check_chip",
+      "module": "faq_objection",
+      "usage": "preview board; do not promote to testimonial without review evidence"
+    },
+    {
+      "asset_id": "d6_trust_banner",
+      "path": "assets/v4_exit_trust_banner.gif",
+      "component_id": "brand_wordmark_shine",
+      "module": "trust_builder",
+      "usage": "pre-rendered GIF brand trust banner"
+    },
+    {
+      "asset_id": "d6_icon_cable",
+      "path": "assets/icon_cable.png",
+      "component_id": "rank_number_strip",
+      "module": "key_points_1234",
+      "usage": "small deterministic icon in colored HTML band"
+    },
+    {
+      "asset_id": "d6_icon_bolt",
+      "path": "assets/icon_bolt.png",
+      "component_id": "rank_number_strip",
+      "module": "key_points_1234",
+      "usage": "small deterministic icon in colored HTML band"
+    },
+    {
+      "asset_id": "d6_icon_shield",
+      "path": "assets/icon_shield.png",
+      "component_id": "proof_check_chip",
+      "module": "trust_builder",
+      "usage": "small deterministic icon in colored HTML band"
+    }
+  ]
+}

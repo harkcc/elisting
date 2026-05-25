@@ -10,9 +10,13 @@ const requiredPaths = [
   'SKILL.md',
   'agent-profile.json',
   'data/component-registry.json',
+  'data/component-cards.json',
   'data/guard-pipeline.json',
   'data/stable-component-catalog.json',
   'data/detail-module-catalog.json',
+  'components/EMAG_COMPATIBILITY.md',
+  'components/COMPONENT_APPLICATION_SOP.md',
+  'components/BENCHMARK_CAPABILITY_MAP.md',
   'components/gif-motion/component-candidates.md',
   'components/micro-labels/README.md',
   'image-workflow/IMAGE_PROMPT_CONTRACT.md',
@@ -31,7 +35,11 @@ const requiredPaths = [
   'spec/qa-report.json',
   'spec/repair-plan.md',
   'spec/execute-report.json',
-  'examples/component-gallery/gif-motion-html-preview.html'
+  'examples/component-gallery/gif-motion-html-preview.html',
+  'examples/d6mhw43bm-component-application/demo.html',
+  'examples/d6mhw43bm-component-application/benchmark-push-demo.html',
+  'examples/d6mhw43bm-component-application/media_asset_index.json',
+  'validators/validate-emag-detail-html.py'
 ];
 
 const failures = [];
@@ -51,6 +59,46 @@ if (existsSync(registryPath)) {
         failures.push(`component ${component.component_id ?? '<unknown>'} missing field ${field}`);
       }
     }
+  }
+}
+
+const cardPath = join(root, 'data/component-cards.json');
+if (existsSync(cardPath)) {
+  const cardDeck = JSON.parse(readFileSync(cardPath, 'utf8'));
+  const requiredCardFields = [
+    'component_id',
+    'component_name',
+    'tags',
+    'listing_modules',
+    'source_code',
+    'usage_guide',
+    'emag_compatibility',
+    'stability_tier',
+    'failure_modes'
+  ];
+  const ids = new Set();
+  for (const card of cardDeck.cards ?? []) {
+    if (ids.has(card.component_id)) {
+      failures.push(`duplicate component card: ${card.component_id}`);
+    }
+    ids.add(card.component_id);
+    for (const field of requiredCardFields) {
+      if (!(field in card)) {
+        failures.push(`component card ${card.component_id ?? '<unknown>'} missing field ${field}`);
+      }
+    }
+    if (!Array.isArray(card.tags) || card.tags.length === 0) {
+      failures.push(`component card ${card.component_id ?? '<unknown>'} must include tags`);
+    }
+    if (!Array.isArray(card.listing_modules) || card.listing_modules.length === 0) {
+      failures.push(`component card ${card.component_id ?? '<unknown>'} must include listing_modules`);
+    }
+    if (!card.source_code?.production_embed) {
+      failures.push(`component card ${card.component_id ?? '<unknown>'} missing source_code.production_embed`);
+    }
+  }
+  if ((cardDeck.cards ?? []).length < 16) {
+    failures.push('component-cards.json should include at least 16 first-batch candidates');
   }
 }
 

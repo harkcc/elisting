@@ -32,6 +32,21 @@ examples/                 Approved examples only.
 - `examples/component-gallery/gif-motion-html-preview.html` is the current HTML/CSS preview page for review.
 - `components/micro-labels/README.md` defines E2 marker, rank strip, proof chip, and related ordering labels.
 
+## Component Stability Position
+
+The HTML/CSS motion gallery is a local preview and source-pattern library. Do
+not paste its CSS keyframes into eMAG descriptions.
+
+For production eMAG detail HTML, motion components must be exported as
+GIF/WebP/PNG and embedded through simple image HTML. See:
+
+- `components/EMAG_COMPATIBILITY.md`
+- `components/BENCHMARK_CAPABILITY_MAP.md`
+- `components/COMPONENT_APPLICATION_SOP.md`
+- `data/component-cards.json`
+- `examples/d6mhw43bm-component-application/demo.html`
+- `examples/d6mhw43bm-component-application/benchmark-push-demo.html`
+
 ## Production Loop
 
 ```text

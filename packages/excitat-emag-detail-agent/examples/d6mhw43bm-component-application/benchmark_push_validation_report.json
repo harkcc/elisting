@@ -1,0 +1,77 @@
+{
+  "path": "packages/excitat-emag-detail-agent/examples/d6mhw43bm-component-application/benchmark-push-demo.html",
+  "status": "pass",
+  "metrics": {
+    "images": 6,
+    "gifImages": 3,
+    "tables": 2,
+    "inlineStyles": 13,
+    "centerStyles": 6,
+    "desktopWidthImages": 3
+  },
+  "topTags": [
+    [
+      "br",
+      8
+    ],
+    [
+      "img",
+      6
+    ],
+    [
+      "td",
+      5
+    ],
+    [
+      "strong",
+      5
+    ],
+    [
+      "p",
+      3
+    ],
+    [
+      "table",
+      2
+    ],
+    [
+      "tr",
+      2
+    ]
+  ],
+  "imageHosts": [
+    [
+      "(unknown)",
+      6
+    ]
+  ],
+  "violations": [],
+  "warnings": [
+    {
+      "level": "info",
+      "code": "gif_detail_media_accepted",
+      "message": "3 GIF image(s) found; accepted for detail HTML, still separate from main-image upload rules"
+    },
+    {
+      "level": "warning",
+      "code": "table_gray_zone",
+      "message": "2 table(s) found"
+    },
+    {
+      "level": "warning",
+      "code": "external_image_hosts",
+      "message": "External image host(s) found",
+      "hosts": [
+        [
+          "(unknown)",
+          6
+        ]
+      ]
+    },
+    {
+      "level": "warning",
+      "code": "desktop_width_bias",
+      "message": "3 image(s) look desktop-width-biased (>800 or 1140-style)"
+    }
+  ]
+}

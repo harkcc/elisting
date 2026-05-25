@@ -45,6 +45,20 @@
     "validator",
     "example_refs"
   ],
+  "component_card_deck": {
+    "path": "data/component-cards.json",
+    "required_fields": [
+      "component_name",
+      "tags",
+      "listing_modules",
+      "source_code",
+      "usage_guide",
+      "emag_compatibility",
+      "stability_tier"
+    ],
+    "compatibility_contract": "components/EMAG_COMPATIBILITY.md",
+    "application_sop": "components/COMPONENT_APPLICATION_SOP.md"
+  },
   "initial_components": [
     {
       "component_id": "first_screen_anchor_triplet",

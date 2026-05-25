@@ -1,0 +1,265 @@
+{
+  "version": "2026-05-25.v1",
+  "purpose": "Tagged component cards for stable listing assembly and premium banner composition.",
+  "compatibility_contract": "components/EMAG_COMPATIBILITY.md",
+  "application_sop": "components/COMPONENT_APPLICATION_SOP.md",
+  "cards": [
+    {
+      "component_id": "motion_shine_sweep_gold",
+      "component_name": "Gold Shine Sweep Banner Motion",
+      "component_family": "gif-motion",
+      "tags": ["hero_banner", "brand_trust", "premium_feel", "black_gold", "product_color_gold", "detail_media"],
+      "listing_modules": ["hero_banner", "trust_builder", "brand_side_label"],
+      "source_code": {
+        "preview_file": "examples/component-gallery/gif-motion-html-preview.html",
+        "preview_selector": ".shine.gold",
+        "production_embed": "<p data-component-id=\"motion_shine_sweep_gold\" data-edit-id=\"hero-banner-01\" style=\"text-align:center;margin:0 0 18px;\"><img src=\"assets/hero-banner.gif\" width=\"800\" alt=\"Product hero banner\"></p>"
+      },
+      "usage_guide": "Use when the product color or brand tone supports a black/gold premium banner. Export the motion as GIF/WebP before eMAG detail HTML.",
+      "emag_compatibility": "preview_only_css_animation; emag_safe_when_exported_as_img",
+      "stability_tier": "stable_candidate_after_media_export",
+      "failure_modes": ["pasted_css_into_emag", "too_much_text_on_banner", "fake_award_badge", "motion_file_too_large"]
+    },
+    {
+      "component_id": "motion_shine_sweep_blue",
+      "component_name": "Blue Tech Shine Sweep",
+      "component_family": "gif-motion",
+      "tags": ["hero_banner", "technical_product", "cool_tone", "product_color_blue", "detail_media"],
+      "listing_modules": ["hero_banner", "product_display", "trust_builder"],
+      "source_code": {
+        "preview_file": "examples/component-gallery/gif-motion-html-preview.html",
+        "preview_selector": ".shine.blue",
+        "production_embed": "<p data-component-id=\"motion_shine_sweep_blue\" data-edit-id=\"hero-banner-01\" style=\"text-align:center;margin:0 0 18px;\"><img src=\"assets/tech-hero.gif\" width=\"800\" alt=\"Technical product banner\"></p>"
+      },
+      "usage_guide": "Use for electronics, tools, cables, and blue-accent products. Keep product structure from real photos.",
+      "emag_compatibility": "preview_only_css_animation; emag_safe_when_exported_as_img",
+      "stability_tier": "stable_candidate_after_media_export",
+      "failure_modes": ["product_deformation", "low_mobile_contrast", "pasted_css_into_emag"]
+    },
+    {
+      "component_id": "motion_step_highlight_3",
+      "component_name": "Three-Step Highlight",
+      "component_family": "gif-motion",
+      "tags": ["steps", "how_to_use", "feature_intro", "key_points_123", "stable_listing"],
+      "listing_modules": ["key_points_1234", "feature_intro", "package_contents"],
+      "source_code": {
+        "preview_file": "examples/component-gallery/gif-motion-html-preview.html",
+        "preview_selector": ".steps .step:nth-child(-n+3)",
+        "production_embed": "<p data-component-id=\"motion_step_highlight_3\" data-edit-id=\"steps-01\" style=\"text-align:center;margin:0 0 18px;\"><img src=\"assets/step-highlight.gif\" width=\"800\" alt=\"Three product steps\"></p>"
+      },
+      "usage_guide": "Use when the customer needs a short sequence: connect, adjust, use; choose 3 steps only.",
+      "emag_compatibility": "preview_only_css_animation; emag_safe_when_exported_as_img",
+      "stability_tier": "stable_candidate_after_media_export",
+      "failure_modes": ["too_many_step_words", "unclear_order", "missing_static_fallback"]
+    },
+    {
+      "component_id": "motion_step_highlight_4",
+      "component_name": "Four-Point Feature Highlight",
+      "component_family": "gif-motion",
+      "tags": ["steps", "feature_intro", "key_points_1234", "comparison", "stable_listing"],
+      "listing_modules": ["key_points_1234", "feature_intro", "specification_board"],
+      "source_code": {
+        "preview_file": "examples/component-gallery/gif-motion-html-preview.html",
+        "preview_selector": ".steps .step",
+        "production_embed": "<p data-component-id=\"motion_step_highlight_4\" data-edit-id=\"feature-points-01\" style=\"text-align:center;margin:0 0 18px;\"><img src=\"assets/four-point-highlight.gif\" width=\"800\" alt=\"Four product points\"></p>"
+      },
+      "usage_guide": "Use for 4 concise benefits or four specification groups. Avoid paragraphs inside the moving asset.",
+      "emag_compatibility": "preview_only_css_animation; emag_safe_when_exported_as_img",
+      "stability_tier": "stable_candidate_after_media_export",
+      "failure_modes": ["mobile_text_overflow", "visual_noise", "unsupported_claim"]
+    },
+    {
+      "component_id": "motion_pulse_dot",
+      "component_name": "Pulse Dot Attention Marker",
+      "component_family": "gif-motion",
+      "tags": ["micro_motion", "attention_marker", "spec_focus", "feature_intro"],
+      "listing_modules": ["feature_intro", "specification_board", "product_display"],
+      "source_code": {
+        "preview_file": "examples/component-gallery/gif-motion-html-preview.html",
+        "preview_selector": ".pulse-dot",
+        "production_embed": "<p data-component-id=\"motion_pulse_dot\" data-edit-id=\"marker-01\" style=\"text-align:center;margin:0 0 12px;\"><img src=\"assets/pulse-dot.gif\" width=\"120\" alt=\"Feature marker\"></p>"
+      },
+      "usage_guide": "Use as a small local marker inside a composed banner, not as a standalone large module.",
+      "emag_compatibility": "preview_only_css_animation; prefer_composite_asset_export",
+      "stability_tier": "needs_export_validation",
+      "failure_modes": ["too_small_to_notice", "decorative_without_meaning", "pasted_css_into_emag"]
+    },
+    {
+      "component_id": "motion_scan_line",
+      "component_name": "Technical Scan Line",
+      "component_family": "gif-motion",
+      "tags": ["technical_product", "quality_check", "spec_focus", "blue_accent"],
+      "listing_modules": ["product_display", "specification_board", "trust_builder"],
+      "source_code": {
+        "preview_file": "examples/component-gallery/gif-motion-html-preview.html",
+        "preview_selector": ".scan-box",
+        "production_embed": "<p data-component-id=\"motion_scan_line\" data-edit-id=\"spec-scan-01\" style=\"text-align:center;margin:0 0 18px;\"><img src=\"assets/spec-scan.gif\" width=\"800\" alt=\"Technical detail scan\"></p>"
+      },
+      "usage_guide": "Use to point attention to material, connector, seam, texture, or spec details captured in real product photos.",
+      "emag_compatibility": "preview_only_css_animation; emag_safe_when_exported_as_img",
+      "stability_tier": "stable_candidate_after_media_export",
+      "failure_modes": ["fake_quality_claim", "not_tied_to_product_detail", "excessive_motion"]
+    },
+    {
+      "component_id": "motion_soft_glow_border",
+      "component_name": "Soft Glow Border",
+      "component_family": "gif-motion",
+      "tags": ["brand_trust", "feature_card", "premium_feel", "low_motion"],
+      "listing_modules": ["trust_builder", "feature_intro", "brand_side_label"],
+      "source_code": {
+        "preview_file": "examples/component-gallery/gif-motion-html-preview.html",
+        "preview_selector": ".glow",
+        "production_embed": "<p data-component-id=\"motion_soft_glow_border\" data-edit-id=\"trust-card-01\" style=\"text-align:center;margin:0 0 18px;\"><img src=\"assets/glow-card.gif\" width=\"800\" alt=\"Highlighted feature card\"></p>"
+      },
+      "usage_guide": "Use when the module needs premium emphasis but should remain calm. Best inside a pre-rendered board.",
+      "emag_compatibility": "preview_only_css_animation; prefer_composite_asset_export",
+      "stability_tier": "needs_export_validation",
+      "failure_modes": ["looks_like_fake_badge", "low_contrast", "too_many_glow_blocks"]
+    },
+    {
+      "component_id": "motion_progress_fill",
+      "component_name": "Progress Fill",
+      "component_family": "gif-motion",
+      "tags": ["steps", "process", "selection_logic", "usage_flow"],
+      "listing_modules": ["key_points_1234", "feature_intro", "faq_objection"],
+      "source_code": {
+        "preview_file": "examples/component-gallery/gif-motion-html-preview.html",
+        "preview_selector": ".progress",
+        "production_embed": "<p data-component-id=\"motion_progress_fill\" data-edit-id=\"process-01\" style=\"text-align:center;margin:0 0 18px;\"><img src=\"assets/progress-fill.gif\" width=\"800\" alt=\"Usage progress visual\"></p>"
+      },
+      "usage_guide": "Use for simple process education or selection steps. Do not imply measured performance unless evidence exists.",
+      "emag_compatibility": "preview_only_css_animation; emag_safe_when_exported_as_img",
+      "stability_tier": "stable_candidate_after_media_export",
+      "failure_modes": ["unsupported_performance_claim", "unclear_process", "pasted_css_into_emag"]
+    },
+    {
+      "component_id": "motion_before_after_wipe",
+      "component_name": "Before After Wipe",
+      "component_family": "gif-motion",
+      "tags": ["before_after", "comparison", "premium_listing", "evidence_required"],
+      "listing_modules": ["before_after", "product_display"],
+      "source_code": {
+        "preview_file": "examples/component-gallery/gif-motion-html-preview.html",
+        "preview_selector": ".wipe",
+        "production_embed": "<p data-component-id=\"motion_before_after_wipe\" data-edit-id=\"before-after-01\" style=\"text-align:center;margin:0 0 18px;\"><img src=\"assets/before-after.gif\" width=\"800\" alt=\"Before and after comparison\"></p>"
+      },
+      "usage_guide": "Use only when there is real before/after evidence or when the scene is clearly illustrative and not a factual claim.",
+      "emag_compatibility": "preview_only_css_animation; emag_safe_when_exported_as_img",
+      "stability_tier": "evidence_required_candidate",
+      "failure_modes": ["misleading_claim", "fake_result", "ai_generated_product_change"]
+    },
+    {
+      "component_id": "motion_radar_ping",
+      "component_name": "Radar Ping Focus",
+      "component_family": "gif-motion",
+      "tags": ["attention_marker", "technical_product", "focus_area", "blue_accent"],
+      "listing_modules": ["product_display", "specification_board"],
+      "source_code": {
+        "preview_file": "examples/component-gallery/gif-motion-html-preview.html",
+        "preview_selector": ".radar",
+        "production_embed": "<p data-component-id=\"motion_radar_ping\" data-edit-id=\"focus-01\" style=\"text-align:center;margin:0 0 18px;\"><img src=\"assets/radar-focus.gif\" width=\"800\" alt=\"Focused product detail\"></p>"
+      },
+      "usage_guide": "Use as a focus marker around one real product detail. Best as part of a rendered banner.",
+      "emag_compatibility": "preview_only_css_animation; prefer_composite_asset_export",
+      "stability_tier": "needs_export_validation",
+      "failure_modes": ["distracts_from_product", "not_tied_to_real_detail", "too_small_on_mobile"]
+    },
+    {
+      "component_id": "brand_wordmark_shine",
+      "component_name": "Brand Wordmark Shine",
+      "component_family": "brand-identity",
+      "tags": ["brand_identity", "x_city", "excitat", "brand_side_label", "hero_banner"],
+      "listing_modules": ["brand_side_label", "hero_banner", "trust_builder"],
+      "source_code": {
+        "preview_file": "examples/component-gallery/gif-motion-html-preview.html",
+        "preview_selector": ".wordmark",
+        "production_embed": "<p data-component-id=\"brand_wordmark_shine\" data-edit-id=\"brand-01\" style=\"text-align:center;margin:0 0 18px;\"><img src=\"assets/brand-wordmark.gif\" width=\"800\" alt=\"EXCITAT brand mark\"></p>"
+      },
+      "usage_guide": "Use for EXCITAT/X-City brand identity. Text must be rendered locally or from approved brand assets, never by the image model.",
+      "emag_compatibility": "preview_only_css_animation; emag_safe_when_exported_as_img",
+      "stability_tier": "stable_candidate_after_media_export",
+      "failure_modes": ["misspelled_brand", "fake_marketplace_badge", "watermark_like_layout"]
+    },
+    {
+      "component_id": "corner_badge_shine",
+      "component_name": "Corner Badge Shine",
+      "component_family": "brand-identity",
+      "tags": ["brand_identity", "corner_label", "small_badge", "trust_builder"],
+      "listing_modules": ["brand_side_label", "trust_builder", "hero_banner"],
+      "source_code": {
+        "preview_file": "examples/component-gallery/gif-motion-html-preview.html",
+        "preview_selector": ".corner-badge",
+        "production_embed": "<p data-component-id=\"corner_badge_shine\" data-edit-id=\"corner-badge-01\" style=\"text-align:center;margin:0 0 18px;\"><img src=\"assets/corner-badge.png\" width=\"800\" alt=\"Brand corner label\"></p>"
+      },
+      "usage_guide": "Use as a small brand or collection marker. Do not imitate certification, marketplace, or official platform badges.",
+      "emag_compatibility": "preview_only_css_animation; prefer_static_png_export",
+      "stability_tier": "stable_candidate_after_media_export",
+      "failure_modes": ["looks_like_official_certification", "too_much_space", "low_contrast"]
+    },
+    {
+      "component_id": "e2_marker_chip",
+      "component_name": "E2 Marker Chip",
+      "component_family": "micro-labels",
+      "tags": ["e2_marker", "collection_marker", "side_label", "sorting", "stable_listing"],
+      "listing_modules": ["brand_side_label", "specification_board", "faq_objection"],
+      "source_code": {
+        "preview_file": "examples/component-gallery/gif-motion-html-preview.html",
+        "preview_selector": ".e2-chip",
+        "production_embed": "<p data-component-id=\"e2_marker_chip\" data-edit-id=\"marker-chip-01\" style=\"text-align:center;margin:0 0 12px;\"><strong>E2</strong> Product family marker</p>"
+      },
+      "usage_guide": "Use for internal product family, module state, or selection markers. The meaning must be defined in the evidence/spec.",
+      "emag_compatibility": "html_static_safe_or_composite_asset",
+      "stability_tier": "stable_html_candidate",
+      "failure_modes": ["unsupported_meaning", "confused_with_certification", "too_small_to_read"]
+    },
+    {
+      "component_id": "rank_number_strip",
+      "component_name": "Rank Number Strip",
+      "component_family": "micro-labels",
+      "tags": ["1234", "key_points", "sorting", "feature_intro", "html_display"],
+      "listing_modules": ["key_points_1234", "feature_intro", "package_contents"],
+      "source_code": {
+        "preview_file": "examples/component-gallery/gif-motion-html-preview.html",
+        "preview_selector": ".rank-strip",
+        "production_embed": "<table data-component-id=\"rank_number_strip\" data-edit-id=\"rank-strip-01\" style=\"width:100%;border-collapse:collapse;\"><tr><td><strong>1</strong> Key point one</td><td><strong>2</strong> Key point two</td></tr></table>"
+      },
+      "usage_guide": "Use to force reading order for 3-4 concise points. Prefer table or rendered image in final eMAG HTML.",
+      "emag_compatibility": "html_static_safe_with_table_warning_or_img_export",
+      "stability_tier": "stable_html_candidate",
+      "failure_modes": ["too_many_items", "mobile_wrap_badly", "missing_data_edit_id"]
+    },
+    {
+      "component_id": "proof_check_chip",
+      "component_name": "Proof Check Chip",
+      "component_family": "micro-labels",
+      "tags": ["proof", "trust_builder", "spec_focus", "faq_objection", "evidence_required"],
+      "listing_modules": ["trust_builder", "specification_board", "faq_objection", "feature_intro"],
+      "source_code": {
+        "preview_file": "examples/component-gallery/gif-motion-html-preview.html",
+        "preview_selector": ".proof-chip",
+        "production_embed": "<p data-component-id=\"proof_check_chip\" data-edit-id=\"proof-chip-01\" style=\"margin:0 0 10px;\"><strong>Checked:</strong> Evidence-backed product fact</p>"
+      },
+      "usage_guide": "Use only for source-backed product facts, not ratings, reviews, certifications, or service promises.",
+      "emag_compatibility": "html_static_safe_or_composite_asset",
+      "stability_tier": "stable_html_candidate",
+      "failure_modes": ["fake_proof", "unsupported_claim", "looks_like_certification_badge"]
+    },
+    {
+      "component_id": "package_count_pulse",
+      "component_name": "Package Count Pulse",
+      "component_family": "micro-labels",
+      "tags": ["package_contents", "quantity", "unboxing", "attention_marker"],
+      "listing_modules": ["package_contents", "feature_intro"],
+      "source_code": {
+        "preview_file": "examples/component-gallery/gif-motion-html-preview.html",
+        "preview_selector": ".package-count",
+        "production_embed": "<p data-component-id=\"package_count_pulse\" data-edit-id=\"package-count-01\" style=\"text-align:center;margin:0 0 18px;\"><img src=\"assets/package-count.gif\" width=\"800\" alt=\"Package content count\"></p>"
+      },
+      "usage_guide": "Use when package contents are known from product photos, supplier data, or structured input.",
+      "emag_compatibility": "preview_only_css_animation; emag_safe_when_exported_as_img",
+      "stability_tier": "stable_candidate_after_media_export",
+      "failure_modes": ["wrong_quantity", "missing_package_evidence", "too_much_text_on_asset"]
+    }
+  ]
+}
+
