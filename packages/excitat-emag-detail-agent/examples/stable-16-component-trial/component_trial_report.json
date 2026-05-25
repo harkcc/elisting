@@ -1,0 +1,196 @@
+{
+  "components": [
+    {
+      "component_id": "motion_shine_sweep_gold",
+      "file": "assets/motion_shine_sweep_gold.gif",
+      "output_type": "gif",
+      "usage": "Banner / brand trust",
+      "guard": [
+        "use_clean_dark_or_gold_base",
+        "product_only_as_inset",
+        "no_css_motion"
+      ],
+      "html": "<p data-component-id=\"motion_shine_sweep_gold\" data-edit-id=\"trial-motion_shine_sweep_gold\" style=\"text-align:center;margin:0 0 16px;\"><img src=\"assets/motion_shine_sweep_gold.gif\" width=\"1140\" alt=\"Banner / brand trust\" style=\"max-width:100%;height:auto;\"></p>"
+    },
+    {
+      "component_id": "motion_shine_sweep_blue",
+      "file": "assets/motion_shine_sweep_blue.gif",
+      "output_type": "gif",
+      "usage": "Banner / brand trust",
+      "guard": [
+        "use_clean_dark_or_gold_base",
+        "product_only_as_inset",
+        "no_css_motion"
+      ],
+      "html": "<p data-component-id=\"motion_shine_sweep_blue\" data-edit-id=\"trial-motion_shine_sweep_blue\" style=\"text-align:center;margin:0 0 16px;\"><img src=\"assets/motion_shine_sweep_blue.gif\" width=\"1140\" alt=\"Banner / brand trust\" style=\"max-width:100%;height:auto;\"></p>"
+    },
+    {
+      "component_id": "motion_step_highlight_3",
+      "file": "assets/motion_step_highlight_3.gif",
+      "output_type": "gif",
+      "usage": "1234 sequence / key points",
+      "guard": [
+        "max_four_points",
+        "short_labels",
+        "mobile_readable"
+      ],
+      "html": "<p data-component-id=\"motion_step_highlight_3\" data-edit-id=\"trial-motion_step_highlight_3\" style=\"text-align:center;margin:0 0 16px;\"><img src=\"assets/motion_step_highlight_3.gif\" width=\"1140\" alt=\"1234 sequence / key points\" style=\"max-width:100%;height:auto;\"></p>"
+    },
+    {
+      "component_id": "motion_step_highlight_4",
+      "file": "assets/motion_step_highlight_4.gif",
+      "output_type": "gif",
+      "usage": "1234 sequence / key points",
+      "guard": [
+        "max_four_points",
+        "short_labels",
+        "mobile_readable"
+      ],
+      "html": "<p data-component-id=\"motion_step_highlight_4\" data-edit-id=\"trial-motion_step_highlight_4\" style=\"text-align:center;margin:0 0 16px;\"><img src=\"assets/motion_step_highlight_4.gif\" width=\"1140\" alt=\"1234 sequence / key points\" style=\"max-width:100%;height:auto;\"></p>"
+    },
+    {
+      "component_id": "motion_pulse_dot",
+      "file": "assets/motion_pulse_dot.gif",
+      "output_type": "gif",
+      "usage": "Micro marker",
+      "guard": [
+        "must_have_meaning",
+        "not_standalone_decoration",
+        "small_motion_only"
+      ],
+      "html": "<p data-component-id=\"motion_pulse_dot\" data-edit-id=\"trial-motion_pulse_dot\" style=\"text-align:center;margin:0 0 16px;\"><img src=\"assets/motion_pulse_dot.gif\" width=\"1140\" alt=\"Micro marker\" style=\"max-width:100%;height:auto;\"></p>"
+    },
+    {
+      "component_id": "motion_scan_line",
+      "file": "assets/motion_scan_line.gif",
+      "output_type": "gif",
+      "usage": "Technical proof / scan",
+      "guard": [
+        "tie_to_real_detail",
+        "no_fake_quality_claim",
+        "avoid_text_zones"
+      ],
+      "html": "<p data-component-id=\"motion_scan_line\" data-edit-id=\"trial-motion_scan_line\" style=\"text-align:center;margin:0 0 16px;\"><img src=\"assets/motion_scan_line.gif\" width=\"1140\" alt=\"Technical proof / scan\" style=\"max-width:100%;height:auto;\"></p>"
+    },
+    {
+      "component_id": "motion_soft_glow_border",
+      "file": "assets/motion_soft_glow_border.gif",
+      "output_type": "gif",
+      "usage": "Trust / notice",
+      "guard": [
+        "one_glow_block_per_screen",
+        "no_fake_badge",
+        "text_first"
+      ],
+      "html": "<p data-component-id=\"motion_soft_glow_border\" data-edit-id=\"trial-motion_soft_glow_border\" style=\"text-align:center;margin:0 0 16px;\"><img src=\"assets/motion_soft_glow_border.gif\" width=\"1140\" alt=\"Trust / notice\" style=\"max-width:100%;height:auto;\"></p>"
+    },
+    {
+      "component_id": "motion_progress_fill",
+      "file": "assets/motion_progress_fill.gif",
+      "output_type": "gif",
+      "usage": "Process / selection",
+      "guard": [
+        "not_a_performance_metric",
+        "explain_process_only",
+        "short_labels"
+      ],
+      "html": "<p data-component-id=\"motion_progress_fill\" data-edit-id=\"trial-motion_progress_fill\" style=\"text-align:center;margin:0 0 16px;\"><img src=\"assets/motion_progress_fill.gif\" width=\"1140\" alt=\"Process / selection\" style=\"max-width:100%;height:auto;\"></p>"
+    },
+    {
+      "component_id": "motion_before_after_wipe",
+      "file": "assets/motion_before_after_wipe.gif",
+      "output_type": "gif",
+      "usage": "Comparison",
+      "guard": [
+        "requires_evidence",
+        "no_fake_result",
+        "block_without_before_after_source"
+      ],
+      "html": "<p data-component-id=\"motion_before_after_wipe\" data-edit-id=\"trial-motion_before_after_wipe\" style=\"text-align:center;margin:0 0 16px;\"><img src=\"assets/motion_before_after_wipe.gif\" width=\"1140\" alt=\"Comparison\" style=\"max-width:100%;height:auto;\"></p>"
+    },
+    {
+      "component_id": "motion_radar_ping",
+      "file": "assets/motion_radar_ping.gif",
+      "output_type": "gif",
+      "usage": "Focus marker",
+      "guard": [
+        "must_point_to_real_detail",
+        "avoid_large_overlay",
+        "not_for_fake_claims"
+      ],
+      "html": "<p data-component-id=\"motion_radar_ping\" data-edit-id=\"trial-motion_radar_ping\" style=\"text-align:center;margin:0 0 16px;\"><img src=\"assets/motion_radar_ping.gif\" width=\"1140\" alt=\"Focus marker\" style=\"max-width:100%;height:auto;\"></p>"
+    },
+    {
+      "component_id": "brand_wordmark_shine",
+      "file": "assets/brand_wordmark_shine.gif",
+      "output_type": "gif",
+      "usage": "Brand identity",
+      "guard": [
+        "brand_text_local_only",
+        "no_marketplace_logo",
+        "spelling_guard"
+      ],
+      "html": "<p data-component-id=\"brand_wordmark_shine\" data-edit-id=\"trial-brand_wordmark_shine\" style=\"text-align:center;margin:0 0 16px;\"><img src=\"assets/brand_wordmark_shine.gif\" width=\"1140\" alt=\"Brand identity\" style=\"max-width:100%;height:auto;\"></p>"
+    },
+    {
+      "component_id": "corner_badge_shine",
+      "file": "assets/corner_badge_shine.gif",
+      "output_type": "gif",
+      "usage": "Corner brand tag",
+      "guard": [
+        "not_certification",
+        "brand_or_collection_only",
+        "no_fake_badge"
+      ],
+      "html": "<p data-component-id=\"corner_badge_shine\" data-edit-id=\"trial-corner_badge_shine\" style=\"text-align:center;margin:0 0 16px;\"><img src=\"assets/corner_badge_shine.gif\" width=\"1140\" alt=\"Corner brand tag\" style=\"max-width:100%;height:auto;\"></p>"
+    },
+    {
+      "component_id": "e2_marker_chip",
+      "file": "assets/e2_marker_chip.png",
+      "output_type": "png",
+      "usage": "Marker / component state",
+      "guard": [
+        "defined_meaning_only",
+        "not_customer_claim",
+        "not_certification"
+      ],
+      "html": "<p data-component-id=\"e2_marker_chip\" data-edit-id=\"trial-e2_marker_chip\" style=\"text-align:center;margin:0 0 16px;\"><img src=\"assets/e2_marker_chip.png\" width=\"1140\" alt=\"Marker / component state\" style=\"max-width:100%;height:auto;\"></p>"
+    },
+    {
+      "component_id": "rank_number_strip",
+      "file": "assets/rank_number_strip.gif",
+      "output_type": "gif",
+      "usage": "1234 sequence / key points",
+      "guard": [
+        "max_four_points",
+        "short_labels",
+        "mobile_readable"
+      ],
+      "html": "<p data-component-id=\"rank_number_strip\" data-edit-id=\"trial-rank_number_strip\" style=\"text-align:center;margin:0 0 16px;\"><img src=\"assets/rank_number_strip.gif\" width=\"1140\" alt=\"1234 sequence / key points\" style=\"max-width:100%;height:auto;\"></p>"
+    },
+    {
+      "component_id": "proof_check_chip",
+      "file": "assets/proof_check_chip.png",
+      "output_type": "png",
+      "usage": "Evidence chip row",
+      "guard": [
+        "must_link_evidence",
+        "no_reviews_without_source",
+        "no_fake_certification"
+      ],
+      "html": "<p data-component-id=\"proof_check_chip\" data-edit-id=\"trial-proof_check_chip\" style=\"text-align:center;margin:0 0 16px;\"><img src=\"assets/proof_check_chip.png\" width=\"1140\" alt=\"Evidence chip row\" style=\"max-width:100%;height:auto;\"></p>"
+    },
+    {
+      "component_id": "package_count_pulse",
+      "file": "assets/package_count_pulse.gif",
+      "output_type": "gif",
+      "usage": "Package contents",
+      "guard": [
+        "quantity_must_match_source",
+        "no_shipping_claim",
+        "short_labels"
+      ],
+      "html": "<p data-component-id=\"package_count_pulse\" data-edit-id=\"trial-package_count_pulse\" style=\"text-align:center;margin:0 0 16px;\"><img src=\"assets/package_count_pulse.gif\" width=\"1140\" alt=\"Package contents\" style=\"max-width:100%;height:auto;\"></p>"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "path": "packages/excitat-emag-detail-agent/examples/stable-16-component-trial/stable-16-component-trial.html",
+  "status": "pass",
+  "metrics": {
+    "images": 16,
+    "gifImages": 14,
+    "tables": 0,
+    "inlineStyles": 34,
+    "centerStyles": 18,
+    "desktopWidthImages": 16
+  },
+  "topTags": [
+    [
+      "p",
+      17
+    ],
+    [
+      "img",
+      16
+    ],
+    [
+      "h2",
+      1
+    ],
+    [
+      "strong",
+      1
+    ]
+  ],
+  "imageHosts": [
+    [
+      "(unknown)",
+      16
+    ]
+  ],
+  "violations": [],
+  "warnings": [
+    {
+      "level": "info",
+      "code": "gif_detail_media_accepted",
+      "message": "14 GIF image(s) found; accepted for detail HTML, still separate from main-image upload rules"
+    },
+    {
+      "level": "warning",
+      "code": "external_image_hosts",
+      "message": "External image host(s) found",
+      "hosts": [
+        [
+          "(unknown)",
+          16
+        ]
+      ]
+    },
+    {
+      "level": "warning",
+      "code": "desktop_width_bias",
+      "message": "16 image(s) look desktop-width-biased (>800 or 1140-style)"
+    }
+  ]
+}

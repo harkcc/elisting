@@ -45,12 +45,15 @@ GIF/WebP/PNG and embedded through simple image HTML. See:
 - `components/COMPONENT_APPLICATION_SOP.md`
 - `data/component-cards.json`
 - `data/gif-component-usage-cards.json`
+- `data/stable-16-gif-library.json`
 - `image-workflow/GIF_SCALE_WORKFLOW.md`
 - `renderers/gif-motion-renderer.py`
+- `renderers/stable-16-component-renderer.py`
 - `examples/d6mhw43bm-component-application/demo.html`
 - `examples/d6mhw43bm-component-application/benchmark-push-demo.html`
 - `examples/d6mhw43bm-component-application/adapted-gif-component-gallery.html`
 - `examples/d6mhw43bm-component-application/adapted-listing-flow-demo.html`
+- `examples/stable-16-component-trial/stable-16-component-trial.html`
 
 ## Production Loop
 

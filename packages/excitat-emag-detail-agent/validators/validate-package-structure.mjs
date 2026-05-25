@@ -12,6 +12,7 @@ const requiredPaths = [
   'data/component-registry.json',
   'data/component-cards.json',
   'data/gif-component-usage-cards.json',
+  'data/stable-16-gif-library.json',
   'data/guard-pipeline.json',
   'data/stable-component-catalog.json',
   'data/detail-module-catalog.json',
@@ -29,6 +30,7 @@ const requiredPaths = [
   'assembly/blueprints/default-stable-detail.json',
   'assembly/blueprints/premium-hero-plus-components.json',
   'renderers/gif-motion-renderer.py',
+  'renderers/stable-16-component-renderer.py',
   'spec/state-design.json',
   'spec/template-selection.json',
   'spec/chat-plan.md',
@@ -44,6 +46,8 @@ const requiredPaths = [
   'examples/d6mhw43bm-component-application/adapted-gif-component-gallery.html',
   'examples/d6mhw43bm-component-application/adapted-listing-flow-demo.html',
   'examples/d6mhw43bm-component-application/media_asset_index.json',
+  'examples/stable-16-component-trial/stable-16-component-trial.html',
+  'examples/stable-16-component-trial/component_trial_report.json',
   'validators/validate-emag-detail-html.py'
 ];
 
