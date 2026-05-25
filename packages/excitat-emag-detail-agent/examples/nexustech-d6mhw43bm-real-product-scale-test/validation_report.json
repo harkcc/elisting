@@ -1,0 +1,72 @@
+{
+  "path": "packages/excitat-emag-detail-agent/examples/nexustech-d6mhw43bm-real-product-scale-test/componentized-preserve-images.html",
+  "status": "pass",
+  "metrics": {
+    "images": 16,
+    "gifImages": 3,
+    "tables": 4,
+    "inlineStyles": 50,
+    "centerStyles": 20,
+    "desktopWidthImages": 0
+  },
+  "topTags": [
+    [
+      "img",
+      16
+    ],
+    [
+      "p",
+      13
+    ],
+    [
+      "td",
+      12
+    ],
+    [
+      "strong",
+      9
+    ],
+    [
+      "br",
+      9
+    ],
+    [
+      "tr",
+      5
+    ],
+    [
+      "table",
+      4
+    ]
+  ],
+  "imageHosts": [
+    [
+      "(unknown)",
+      16
+    ]
+  ],
+  "violations": [],
+  "warnings": [
+    {
+      "level": "info",
+      "code": "gif_detail_media_accepted",
+      "message": "3 GIF image(s) found; accepted for detail HTML, still separate from main-image upload rules"
+    },
+    {
+      "level": "warning",
+      "code": "table_gray_zone",
+      "message": "4 table(s) found"
+    },
+    {
+      "level": "warning",
+      "code": "external_image_hosts",
+      "message": "External image host(s) found",
+      "hosts": [
+        [
+          "(unknown)",
+          16
+        ]
+      ]
+    }
+  ]
+}

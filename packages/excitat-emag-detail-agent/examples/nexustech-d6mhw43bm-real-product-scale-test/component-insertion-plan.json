@@ -1,0 +1,82 @@
+{
+  "product_id": "D6MHW43BM",
+  "vendor": "NexusTech",
+  "route": "stable_listing",
+  "source_capture": "/Users/cc/Desktop/photo_show/references/user_cases/20260521_emag_cangswjp/products/12_D6MHW43BM_Cablu-de-incarcare-pentru-vehicul-electric-Excitat-Tip-2-la-Tip-2-32A-22kW-5m-trei-faze-",
+  "locked_structure": {
+    "original_detail_image_count": 13,
+    "original_detail_image_order_changed": false,
+    "original_banners_replaced": false,
+    "new_generated_banner": false
+  },
+  "scale_decision": [
+    {
+      "stage": "InputGuard",
+      "decision": "Use only saved NexusTech product metadata and captured detail images.",
+      "guard": ["no live scrape required", "do not invent reviews", "do not create service promises"]
+    },
+    {
+      "stage": "DesignLock",
+      "decision": "Preserve the existing image-led listing. Add calm white-card micro modules only.",
+      "reference": "components/STABLE_GIF_DESIGN_MD.md",
+      "guard": ["no noisy product image background", "no new black-gold banner in this test"]
+    },
+    {
+      "stage": "ComponentSelection",
+      "decision": "Insert three small stable components between existing images.",
+      "components": ["rank_number_strip", "corner_badge_shine", "proof_check_chip", "motion_soft_glow_border"]
+    },
+    {
+      "stage": "EvidenceGuard",
+      "decision": "Use only facts present in the product title: Type 2, 32A, 22kW, 5m, IP65, carry bag.",
+      "guard": ["no testimonial", "no warranty", "no delivery", "no certification"]
+    },
+    {
+      "stage": "PublishGuard",
+      "decision": "Every inserted module has component_id and data-edit-id. GIFs are media assets, not CSS animation.",
+      "guard": ["eMAG-safe tag subset", "mobile width check", "image order preserved"]
+    }
+  ],
+  "insertions": [
+    {
+      "after_original_image": "01_6d06ca94.jpg",
+      "component_id": "rank_number_strip",
+      "data_edit_id": "d6-real-reading-order",
+      "module_intent": "Guide buyer reading order before deeper images.",
+      "tags": ["123", "feature_intro", "white_card", "reading_order"],
+      "reference": "Open Design white-card rhythm plus rank-number strip from stable-16 library.",
+      "assist": ["three labels: Fit, Power, Care", "source product title"],
+      "guard": ["short labels only", "not decorative numbering", "max one rank GIF before first proof block"]
+    },
+    {
+      "after_original_image": "03_4d871ef7.jpg",
+      "component_id": "corner_badge_shine",
+      "data_edit_id": "d6-real-brand-fit-module",
+      "module_intent": "Replace plain feature text with a compact brand/feature card.",
+      "tags": ["brand", "small_label", "feature_intro", "white_card"],
+      "reference": "Small badge use from Stable GIF Design MD.",
+      "assist": ["brand: EXCITAT", "facts: Type 2, 32A, 22kW, 5m"],
+      "guard": ["not certification", "not marketplace badge", "brand label stays small"]
+    },
+    {
+      "after_original_image": "05_37c54e9d.jpg",
+      "component_id": "proof_check_chip",
+      "data_edit_id": "d6-real-proof-facts",
+      "module_intent": "Turn title facts into a scan-friendly proof row.",
+      "tags": ["proof", "spec", "evidence", "chip"],
+      "reference": "Open Design status chips and component proof row.",
+      "assist": ["22kW", "32A", "5m", "IP65"],
+      "guard": ["requires product-title evidence", "no fake certification", "no performance comparison", "use 2x2 layout at mobile width"]
+    },
+    {
+      "after_original_image": "08_0a14d3f0.jpg",
+      "component_id": "motion_soft_glow_border",
+      "data_edit_id": "d6-real-use-note",
+      "module_intent": "Add a slow premium note after product-detail images.",
+      "tags": ["trust_notice", "soft_motion", "white_card"],
+      "reference": "Slow premium/manual component rule.",
+      "assist": ["indoor/outdoor use from title", "compatibility reminder"],
+      "guard": ["no warranty", "no service promise", "one soft motion notice only"]
+    }
+  ]
+}
