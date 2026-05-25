@@ -43,9 +43,11 @@ GIF/WebP/PNG and embedded through simple image HTML. See:
 - `components/EMAG_COMPATIBILITY.md`
 - `components/BENCHMARK_CAPABILITY_MAP.md`
 - `components/COMPONENT_APPLICATION_SOP.md`
+- `components/STABLE_GIF_DESIGN_MD.md`
 - `data/component-cards.json`
 - `data/gif-component-usage-cards.json`
 - `data/stable-16-gif-library.json`
+- `data/stable-16-application-table.json`
 - `image-workflow/GIF_SCALE_WORKFLOW.md`
 - `renderers/gif-motion-renderer.py`
 - `renderers/stable-16-component-renderer.py`
